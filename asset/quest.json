@@ -1,0 +1,1268 @@
+{
+    "questions": [
+        {
+            "question": "La confidentialité garantit :",
+            "choices": [
+                "L'accès rapide aux données",
+                "La sauvegarde des données",
+                "Que seules les personnes autorisées accèdent aux données",
+                "L'intégrité du système"
+            ],
+            "correct_answer": "Que seules les personnes autorisées accèdent aux données",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Quelle commande permet de générer une paire de clés SSH ?",
+            "choices": [
+                "ssh-keygen",
+                "ssh-keycreate",
+                "ssh-gen",
+                "keygen"
+            ],
+            "correct_answer": "ssh-keygen",
+            "category": "05_SSH"
+        },
+        {
+            "question": "Quel fichier contient la clé publique SSH ?",
+            "choices": [
+                "id_rsa",
+                "id_rsa.pub",
+                "authorized_keys",
+                "known_hosts"
+            ],
+            "correct_answer": "id_rsa.pub",
+            "category": "05_SSH"
+        },
+        {
+            "question": "Où doit être copiée la clé publique pour permettre une connexion SSH sans mot de passe ?",
+            "choices": [
+                "/etc/passwd",
+                "authorized_keys",
+                "known_hosts",
+                "id_rsa"
+            ],
+            "correct_answer": "authorized_keys",
+            "category": "05_SSH"
+        },
+        {
+            "question": "L’authentification par clé SSH permet :",
+            "choices": [
+                "D’éviter l’usage de mots de passe",
+                "D’améliorer la sécurité",
+                "De remplacer le chiffrement",
+                "D’automatiser des connexions"
+            ],
+            "correct_answer": [
+                "D’éviter l’usage de mots de passe",
+                "D’améliorer la sécurité",
+                "D’automatiser des connexions"
+            ],
+            "category": "05_SSH"
+        },
+        {
+            "question": "Un paquet TCP SYN-ACK indique :",
+            "choices": [
+                "Port ouvert",
+                "Port fermé",
+                "Port filtré",
+                "Port inactif"
+            ],
+            "correct_answer": "Port ouvert",
+            "category": "07_Reconnaissance"
+        },
+        {
+            "question": "Un paquet TCP avec flag RST (RA) signifie :",
+            "choices": [
+                "Port ouvert",
+                "Port fermé",
+                "Port filtré",
+                "Port sécurisé"
+            ],
+            "correct_answer": "Port fermé",
+            "category": "07_Reconnaissance"
+        },
+        {
+            "question": "Les scans SYN sont utilisés car :",
+            "choices": [
+                "Ils sont plus rapides",
+                "Ils sont moins détectables",
+                "Ils établissent une connexion complète",
+                "Ils évitent certains logs"
+            ],
+            "correct_answer": [
+                "Ils sont plus rapides",
+                "Ils sont moins détectables",
+                "Ils évitent certains logs"
+            ],
+            "category": "07_Reconnaissance"
+        },
+        {
+            "question": "Une fonction de hachage doit :",
+            "choices": [
+                "Être irréversible",
+                "Produire toujours la même sortie pour la même entrée",
+                "Être facilement inversable",
+                "Être rapide à calculer"
+            ],
+            "correct_answer": [
+                "Être irréversible",
+                "Produire toujours la même sortie pour la même entrée",
+                "Être rapide à calculer"
+            ],
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "Le sel (salt) permet :",
+            "choices": [
+                "D’accélérer le hash",
+                "D’éviter les attaques par rainbow tables",
+                "De chiffrer les données",
+                "De compresser les données"
+            ],
+            "correct_answer": "D’éviter les attaques par rainbow tables",
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "Le mode ECB présente quel problème ?",
+            "choices": [
+                "Trop lent",
+                "Même entrée → même sortie",
+                "Impossible à déchiffrer",
+                "Clé publique nécessaire"
+            ],
+            "correct_answer": "Même entrée → même sortie",
+            "category": "03_Chiffrement_Symétrique"
+        },
+        {
+            "question": "Le chiffrement symétrique nécessite :",
+            "choices": [
+                "Une clé partagée",
+                "Une distribution sécurisée de la clé",
+                "Une clé publique",
+                "Une clé secrète"
+            ],
+            "correct_answer": [
+                "Une clé partagée",
+                "Une distribution sécurisée de la clé",
+                "Une clé secrète"
+            ],
+            "category": "03_Chiffrement_Symétrique"
+        },
+        {
+            "question": "Une signature numérique garantit :",
+            "choices": [
+                "L’intégrité",
+                "L’authenticité",
+                "La confidentialité",
+                "La non-répudiation"
+            ],
+            "correct_answer": [
+                "L’intégrité",
+                "L’authenticité",
+                "La non-répudiation"
+            ],
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "L’attaque Pass-the-Hash permet :",
+            "choices": [
+                "De deviner un mot de passe",
+                "D’utiliser un hash pour s’authentifier",
+                "De casser AES",
+                "De chiffrer un mot de passe"
+            ],
+            "correct_answer": "D’utiliser un hash pour s’authentifier",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Une autorité de certification (CA) peut être compromise si :",
+            "choices": [
+                "Sa clé privée est volée",
+                "Elle vérifie mal les identités",
+                "Elle utilise HTTPS",
+                "Elle est contrôlée par un État"
+            ],
+            "correct_answer": [
+                "Sa clé privée est volée",
+                "Elle vérifie mal les identités",
+                "Elle est contrôlée par un État"
+            ],
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le phishing consiste à :",
+            "choices": [
+                "Scanner un réseau",
+                "Se faire passer pour une entité légitime",
+                "Voler des identifiants",
+                "Chiffrer des fichiers"
+            ],
+            "correct_answer": [
+                "Se faire passer pour une entité légitime",
+                "Voler des identifiants"
+            ],
+            "category": "01_Situation"
+        },
+        {
+            "question": "Un hoax est :",
+            "choices": [
+                "Un malware",
+                "Une fausse information",
+                "Une attaque réseau",
+                "Un exploit"
+            ],
+            "correct_answer": "Une fausse information",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "UPnP peut être dangereux car :",
+            "choices": [
+                "Permet exécution de code",
+                "Peut provoquer un DoS",
+                "Renforce la sécurité",
+                "Expose des services automatiquement"
+            ],
+            "correct_answer": [
+                "Permet exécution de code",
+                "Peut provoquer un DoS",
+                "Expose des services automatiquement"
+            ],
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "L’ALE dépend de :",
+            "choices": [
+                "ARO",
+                "SLE",
+                "EF",
+                "AV"
+            ],
+            "correct_answer": [
+                "ARO",
+                "SLE"
+            ],
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Une authentification SSH par clé échoue. Quelle peut être la cause ?",
+            "choices": [
+                "Mauvais droits sur le fichier private key",
+                "Clé publique absente du serveur",
+                "Port SSH incorrect",
+                "Clé privée copiée sur le serveur"
+            ],
+            "correct_answer": [
+                "Mauvais droits sur le fichier private key",
+                "Clé publique absente du serveur",
+                "Port SSH incorrect"
+            ],
+            "category": "05_SSH"
+        },
+        {
+            "question": "Concernant les clés SSH :",
+            "choices": [
+                "La clé privée doit rester secrète",
+                "La clé publique peut être partagée",
+                "La clé privée peut être envoyée au serveur",
+                "Une passphrase renforce la sécurité"
+            ],
+            "correct_answer": [
+                "La clé privée doit rester secrète",
+                "La clé publique peut être partagée",
+                "Une passphrase renforce la sécurité"
+            ],
+            "category": "05_SSH"
+        },
+        {
+            "question": "Lors d’un scan réseau, un port ne répond pas. Cela signifie :",
+            "choices": [
+                "Il est forcément fermé",
+                "Il est forcément filtré",
+                "Impossible de conclure",
+                "Il est ouvert"
+            ],
+            "correct_answer": "Impossible de conclure",
+            "category": "07_Reconnaissance"
+        },
+        {
+            "question": "Un firewall moderne détecte souvent :",
+            "choices": [
+                "SYN scan",
+                "Connect scan",
+                "Ping ICMP",
+                "Scan passif"
+            ],
+            "correct_answer": [
+                "SYN scan",
+                "Connect scan"
+            ],
+            "category": "07_Reconnaissance"
+        },
+        {
+            "question": "Deux fichiers différents ont le même hash. Cela signifie :",
+            "choices": [
+                "L’algorithme est cassé",
+                "C’est une collision",
+                "C’est impossible",
+                "Le hash est faux"
+            ],
+            "correct_answer": "C’est une collision",
+            "category": ""
+        },
+        {
+            "question": "Une fonction de hachage sécurisée doit :",
+            "choices": [
+                "Être irréversible",
+                "Résister aux collisions",
+                "Être lente à calculer",
+                "Produire des sorties de taille fixe"
+            ],
+            "correct_answer": [
+                "Être irréversible",
+                "Résister aux collisions",
+                "Produire des sorties de taille fixe"
+            ],
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "Le chiffrement symétrique est dangereux si :",
+            "choices": [
+                "La clé est trop longue",
+                "La clé est mal protégée",
+                "L’algorithme est rapide",
+                "Le message est court"
+            ],
+            "correct_answer": "La clé est mal protégée",
+            "category": "03_Chiffrement_Symétrique"
+        },
+        {
+            "question": "En mode ECB, deux blocs identiques produisent :",
+            "choices": [
+                "Des blocs différents",
+                "Des blocs identiques",
+                "Une erreur",
+                "Un hash"
+            ],
+            "correct_answer": "Des blocs identiques",
+            "category": "03_Chiffrement_Symétrique"
+        },
+        {
+            "question": "Une signature numérique ne garantit PAS :",
+            "choices": [
+                "L’intégrité",
+                "L’authenticité",
+                "La confidentialité",
+                "La non-répudiation"
+            ],
+            "correct_answer": "La confidentialité",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Le \"Pass-the-Hash\" exploite :",
+            "choices": [
+                "Une faiblesse du chiffrement",
+                "Une mauvaise gestion des mots de passe",
+                "L’utilisation directe du hash pour s’authentifier",
+                "Une collision de hash"
+            ],
+            "correct_answer": "L’utilisation directe du hash pour s’authentifier",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Une CA compromise implique :",
+            "choices": [
+                "Faux certificats possibles",
+                "Perte de confiance globale",
+                "Plus de chiffrement possible",
+                "Attaques MITM facilitées"
+            ],
+            "correct_answer": [
+                "Faux certificats possibles",
+                "Perte de confiance globale",
+                "Attaques MITM facilitées"
+            ],
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Dans un phishing réussi, quelle propriété est violée ?",
+            "choices": [
+                "Confidentialité",
+                "Intégrité",
+                "Authenticité",
+                "Disponibilité"
+            ],
+            "correct_answer": [
+                "Confidentialité",
+                "Authenticité"
+            ],
+            "category": "01_Situation"
+        },
+        {
+            "question": "Une vulnérabilité sans menace active :",
+            "choices": [
+                "Est un risque immédiat",
+                "Ne représente aucun danger",
+                "Peut devenir un risque",
+                "Est une attaque"
+            ],
+            "correct_answer": "Peut devenir un risque",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Une mesure qui réduit EF agit sur :",
+            "choices": [
+                "La probabilité",
+                "L’impact",
+                "La fréquence",
+                "La détection"
+            ],
+            "correct_answer": "L’impact",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Quelle situation correspond à une mauvaise pratique ?",
+            "choices": [
+                "Réutiliser une clé SSH",
+                "Stocker une clé privée en clair",
+                "Ne pas utiliser de passphrase",
+                "Partager sa clé publique"
+            ],
+            "correct_answer": [
+                "Stocker une clé privée en clair",
+                "Ne pas utiliser de passphrase"
+            ],
+            "category": "05_SSH"
+        },
+        {
+            "question": "L'intégrité assure :",
+            "choices": [
+                "La non répudiation",
+                "L'absence de modification non autorisée",
+                "L'accès sécurisé",
+                "Le chiffrement"
+            ],
+            "correct_answer": "L'absence de modification non autorisée",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "La disponibilité signifie :",
+            "choices": [
+                "Données chiffrées",
+                "Authentification forte",
+                "Accès aux données quand nécessaire",
+                "Accès limité"
+            ],
+            "correct_answer": "Accès aux données quand nécessaire",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Que signifie AAA ?",
+            "choices": [
+                "Authentication - Authorization - Accounting",
+                "Authentication - Authorization - Availability",
+                "Authentication - Access - Availability",
+                "Auditing - Authorization - Availability"
+            ],
+            "correct_answer": "Authentication - Authorization - Accounting",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "L'autorisation correspond à :",
+            "choices": [
+                "Vérifier l'identité",
+                "Enregistrer les logs",
+                "Chiffrer les données",
+                "Définir des droits d'accès"
+            ],
+            "correct_answer": "Définir des droits d'accès",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Accounting permet :",
+            "choices": [
+                "Bloquer les attaques",
+                "Tracer les actions",
+                "Authentifier",
+                "Autoriser"
+            ],
+            "correct_answer": "Tracer les actions",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Quel exemple relève de l'authentification ?",
+            "choices": [
+                "Donner accès à un dossier",
+                "Enregistrer un log",
+                "Vérifier un mot de passe",
+                "Rendre disponible un fichier"
+            ],
+            "correct_answer": "Vérifier un mot de passe",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Quel pilier CIA est impacté par un ransomware ?",
+            "choices": [
+                "Confidentialité uniquement",
+                "Disponibilité principalement",
+                "Intégrité uniquement",
+                "Aucun"
+            ],
+            "correct_answer": "Disponibilité principalement",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Un atout (asset) est :",
+            "choices": [
+                "Une ressource de valeur",
+                "Une attaque",
+                "Une faille",
+                "Un risque"
+            ],
+            "correct_answer": "Une ressource de valeur",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Une vulnérabilité est :",
+            "choices": [
+                "Une protection",
+                "Une attaque",
+                "Un actif",
+                "Une faiblesse exploitable"
+            ],
+            "correct_answer": "Une faiblesse exploitable",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Le risque est :",
+            "choices": [
+                "Une menace",
+                "Une faille",
+                "La combinaison menace + vulnérabilité",
+                "La combinaison menace + vulnérabilité + atout"
+            ],
+            "correct_answer": "La combinaison menace + vulnérabilité + atout",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Exemple de vulnérabilité :",
+            "choices": [
+                "Logiciel non mis à jour",
+                "Malware",
+                "Attaquant",
+                "Phishing"
+            ],
+            "correct_answer": "Logiciel non mis à jour",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Exemple d'atout :",
+            "choices": [
+                "Base de données client",
+                "Virus",
+                "Attaque DDoS",
+                "Exploit"
+            ],
+            "correct_answer": "Base de données client",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Une menace sans vulnérabilité :",
+            "choices": [
+                "Crée un risque élevé",
+                "Ne crée pas de risque exploitable",
+                "Supprime le système",
+                "Supprime les données"
+            ],
+            "correct_answer": "Ne crée pas de risque exploitable",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Une vulnérabilité sans menace :",
+            "choices": [
+                "Est toujours critique",
+                "Est une attaque",
+                "Supprime les données",
+                "N'entraîne pas de risque immédiat"
+            ],
+            "correct_answer": "N'entraîne pas de risque immédiat",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "La gestion des risques consiste à :",
+            "choices": [
+                "Supprimer tous les risques",
+                "Identifier et traiter les risques",
+                "Ignorer les menaces",
+                "Installer un antivirus"
+            ],
+            "correct_answer": "Identifier et traiter les risques",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "La première étape de la gestion des risques est :",
+            "choices": [
+                "Traitement",
+                "Acceptation",
+                "Suppression",
+                "Identification"
+            ],
+            "correct_answer": "Identification",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Le traitement du risque inclut :",
+            "choices": [
+                "Réduire, transférer, accepter ou éviter les risques",
+                "Supprimer internet",
+                "Détruire données",
+                "Réduire les risques"
+            ],
+            "correct_answer": "Réduire, transférer, accepter ou éviter les risques",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Accepter un risque signifie :",
+            "choices": [
+                "Le supprimer",
+                "Le tolérer",
+                "Le transférer",
+                "L'ignorer totalement"
+            ],
+            "correct_answer": "Le tolérer",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Réduire un risque consiste à :",
+            "choices": [
+                "Supprimer l'actif",
+                "Ignorer",
+                "Mettre en place des mesures de sécurité",
+                "Supprimer la menace"
+            ],
+            "correct_answer": "Mettre en place des mesures de sécurité",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Éviter un risque consiste à :",
+            "choices": [
+                "Le réduire",
+                "Supprimer l'atout",
+                "Supprimer la menace",
+                "Supprimer la vulnérabilité"
+            ],
+            "correct_answer": "Supprimer la menace",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "La probabilité correspond à :",
+            "choices": [
+                "L'impact",
+                "La valeur de l'actif",
+                "La chance qu'un événement survienne",
+                "La vulnérabilité"
+            ],
+            "correct_answer": "La chance qu'un événement survienne",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "TLS remplace :",
+            "choices": [
+                "SSH",
+                "SSL",
+                "FTP",
+                "IP"
+            ],
+            "correct_answer": "SSL",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "TLS utilise :",
+            "choices": [
+                "Chiffrement asymétrique et symétrique",
+                "Uniquement symétrique",
+                "Uniquement asymétrique",
+                "Uniquement des fonctions de hachages"
+            ],
+            "correct_answer": "Chiffrement asymétrique et symétrique",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le handshake TLS sert à :",
+            "choices": [
+                "Transférer des fichiers",
+                "Gérer ports",
+                "Établir une session sécurisée",
+                "Vérifier les IPs source et destination"
+            ],
+            "correct_answer": "Établir une session sécurisée",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le port par défaut de SSH est :",
+            "choices": [
+                "80",
+                "22",
+                "443",
+                "21"
+            ],
+            "correct_answer": "22",
+            "category": "05_SSH"
+        },
+        {
+            "question": "Le port par défaut de HTTPS est :",
+            "choices": [
+                "80",
+                "22",
+                "443",
+                "445"
+            ],
+            "correct_answer": "443",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "SSH utilise :",
+            "choices": [
+                "TLS",
+                "Son propre protocole",
+                "HTTP",
+                "FTP"
+            ],
+            "correct_answer": "Son propre protocole",
+            "category": "05_SSH"
+        },
+        {
+            "question": "TLS 1.0 est aujourd'hui :",
+            "choices": [
+                "Recommandé",
+                "Obsolète",
+                "Obligatoire",
+                "En version beta"
+            ],
+            "correct_answer": "Obsolète",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Une clé de session TLS est :",
+            "choices": [
+                "Temporaire",
+                "Permanente",
+                "Symétrique",
+                "Asymétrique"
+            ],
+            "correct_answer": [
+                "Temporaire",
+                "Symétrique"
+            ],
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Quel est le principal inconvénient du chiffrement symétrique ?",
+            "choices": [
+                "Trop lent",
+                "Mauvaise sécurité",
+                "Distribution de la clé",
+                "Trop complexe"
+            ],
+            "correct_answer": "Distribution de la clé",
+            "category": "03_Chiffrement_Symétrique"
+        },
+        {
+            "question": "Une clé symétrique doit être :",
+            "choices": [
+                "Publique",
+                "Privée et secrète",
+                "Partagée librement",
+                "Optionnelle"
+            ],
+            "correct_answer": "Privée et secrète",
+            "category": "03_Chiffrement_Symétrique"
+        },
+        {
+            "question": "Le chiffrement symétrique est souvent utilisé pour :",
+            "choices": [
+                "Signer des documents",
+                "Chiffrer de gros volumes de données",
+                "Vérifier l'identité",
+                "Générer des clés publiques"
+            ],
+            "correct_answer": "Chiffrer de gros volumes de données",
+            "category": "03_Chiffrement_Symétrique"
+        },
+        {
+            "question": "Quel est l'avantage principal du chiffrement asymétrique ?",
+            "choices": [
+                "Rapidité",
+                "Simplicité",
+                "Pas besoin de partager une clé secrète",
+                "Faible coût"
+            ],
+            "correct_answer": "Pas besoin de partager une clé secrète",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Une fonction de hachage produit :",
+            "choices": [
+                "Une clé",
+                "Une signature",
+                "Une empreinte",
+                "Un mot de passe"
+            ],
+            "correct_answer": "Une empreinte",
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "Une fonction de hachage est :",
+            "choices": [
+                "Réversible",
+                "Irréversible",
+                "Symétrique",
+                "Lente"
+            ],
+            "correct_answer": "Irréversible",
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "Exemple de fonction de hachage :",
+            "choices": [
+                "RSA",
+                "AES",
+                "SHA-256",
+                "ECC"
+            ],
+            "correct_answer": "SHA-256",
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "Deux entrées identiques dans une fonction de hachage donnent :",
+            "choices": [
+                "Des résultats différents",
+                "Le même hash",
+                "Une erreur",
+                "Rien"
+            ],
+            "correct_answer": "Le même hash",
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "Une collision est :",
+            "choices": [
+                "Une erreur réseau",
+                "Deux entrées avec le même hash",
+                "Une signature cassée",
+                "Une clé cassée"
+            ],
+            "correct_answer": "Deux entrées avec le même hash",
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "MD5 est aujourd'hui :",
+            "choices": [
+                "Très sécurisé",
+                "Obsolète",
+                "un algorithme de chiffrement symétrique",
+                "un algorithme de chiffrement asymétrique"
+            ],
+            "correct_answer": "Obsolète",
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "Le hachage est utilisé pour :",
+            "choices": [
+                "Chiffrer",
+                "Stocker des mots de passe",
+                "Envoyer des emails",
+                "Compiler du code"
+            ],
+            "correct_answer": "Stocker des mots de passe",
+            "category": "02_Cryptographie"
+        },
+        {
+            "question": "Une signature numérique garantit :",
+            "choices": [
+                "La vitesse",
+                "L'authenticité",
+                "Le stockage",
+                "La compression"
+            ],
+            "correct_answer": "L'authenticité",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Une signature numérique utilise :",
+            "choices": [
+                "Une clé symétrique",
+                "Une clé privée",
+                "Aucune clé",
+                "Une clé publique uniquement"
+            ],
+            "correct_answer": "Une clé privée",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Une signature numérique assure :",
+            "choices": [
+                "Confidentialité uniquement",
+                "Intégrité et authenticité",
+                "Compression",
+                "Vitesse"
+            ],
+            "correct_answer": "Intégrité et authenticité",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "La signature est créée sur :",
+            "choices": [
+                "Le message brut",
+                "Le hash du message",
+                "La clé",
+                "Le réseau"
+            ],
+            "correct_answer": "Le hash du message",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Une signature numérique empêche :",
+            "choices": [
+                "Le piratage réseau",
+                "La répudiation",
+                "La compression",
+                "Le stockage"
+            ],
+            "correct_answer": "La répudiation",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Le processus inclut :",
+            "choices": [
+                "Hachage + chiffrement",
+                "Compression + chiffrement",
+                "Cryptage symétrique uniquement",
+                "Transmission brute"
+            ],
+            "correct_answer": "Hachage + chiffrement",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Quel est le rôle principal du KDC ?",
+            "choices": [
+                "Stocker les mots de passe",
+                "Distribuer des tickets d'authentification",
+                "Chiffrer les disques",
+                "Gérer les certificats"
+            ],
+            "correct_answer": "Distribuer des tickets d'authentification",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le KDC utilise :",
+            "choices": [
+                "TGT et TGS",
+                "DNS et DHCP",
+                "LDAP et HTTP",
+                "FTP et SMTP"
+            ],
+            "correct_answer": "TGT et TGS",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Que fournit l'AS (Authentication Service) de Kerberos ?",
+            "choices": [
+                "Un certificat",
+                "Un ticket TGS",
+                "Un ticket TGT",
+                "Une clé privée"
+            ],
+            "correct_answer": "Un ticket TGT",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le TGT sert à :",
+            "choices": [
+                "Accéder directement aux services",
+                "Authentifier un serveur",
+                "Chiffrer les fichiers",
+                "Obtenir des tickets de service"
+            ],
+            "correct_answer": "Obtenir des tickets de service",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Quel protocole utilise Kerberos ?",
+            "choices": [
+                "HTTP",
+                "FTP",
+                "ICMP",
+                "UDP/TCP"
+            ],
+            "correct_answer": "UDP/TCP",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Dans Kerberos, le mot de passe est :",
+            "choices": [
+                "Envoyé en clair",
+                "Stocké sur le serveur web",
+                "Jamais transmis directement",
+                "Hashé et envoyé"
+            ],
+            "correct_answer": "Jamais transmis directement",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Quelle attaque cible Kerberos avec des tickets volés ?",
+            "choices": [
+                "Pass-the-Ticket",
+                "CSRF",
+                "SQL Injection",
+                "XSS"
+            ],
+            "correct_answer": "Pass-the-Ticket",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le KDC est généralement intégré à :",
+            "choices": [
+                "IIS",
+                "Apache",
+                "Active Directory",
+                "MySQL"
+            ],
+            "correct_answer": "Active Directory",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Quel élément contient les permissions d'accès ?",
+            "choices": [
+                "TGS",
+                "TGT",
+                "Clé privée",
+                "Certificat"
+            ],
+            "correct_answer": "TGS",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Une faiblesse classique de Kerberos est :",
+            "choices": [
+                "Absence de chiffrement",
+                "Dépendance à l'heure système",
+                "Utilisation de HTTP",
+                "Absence de tickets"
+            ],
+            "correct_answer": "Dépendance à l'heure système",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Un certificat numérique contient :",
+            "choices": [
+                "Une clé privée",
+                "Un mot de passe",
+                "Une clé publique",
+                "Un hash de fichier"
+            ],
+            "correct_answer": "Une clé publique",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Qui signe un certificat ?",
+            "choices": [
+                "Le client",
+                "Une CA",
+                "Le serveur",
+                "Le navigateur"
+            ],
+            "correct_answer": "Une CA",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Une CA est :",
+            "choices": [
+                "Un serveur DNS",
+                "Un firewall",
+                "Un proxy",
+                "Une autorité de certification"
+            ],
+            "correct_answer": "Une autorité de certification",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le CSR signifie :",
+            "choices": [
+                "Certificate Signing Request",
+                "Certificate Security Rule",
+                "Cryptographic Signature Request",
+                "Certificate System Root"
+            ],
+            "correct_answer": "Certificate Signing Request",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Un certificat auto-signé est :",
+            "choices": [
+                "Signé par une CA",
+                "Invalide",
+                "Signé par l'hôte qui utilise le certificat",
+                "Expiré"
+            ],
+            "correct_answer": "Signé par l'hôte qui utilise le certificat",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le champ CN représente :",
+            "choices": [
+                "Clé numérique",
+                "Nom commun",
+                "Certificat numérique",
+                "Code identifiant le réseau"
+            ],
+            "correct_answer": "Nom commun",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "La chaîne de certification inclut :",
+            "choices": [
+                "Le CA intermédiaire seulement",
+                "Le certificat racine seulement",
+                "Le CA intermédiaire et le certificat racine",
+                "Le client seulement, le CA intermédiaire et le certificat racine"
+            ],
+            "correct_answer": "Le CA intermédiaire et le certificat racine",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Une CRL sert à :",
+            "choices": [
+                "Générer des certificats",
+                "Vérifier les mots de passe",
+                "Lister les certificats révoqués",
+                "Stocker les clés"
+            ],
+            "correct_answer": "Lister les certificats révoqués",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "OCSP (Online Certificate Status Protocol) :",
+            "choices": [
+                "Vérification en temps réel",
+                "Création de certificats",
+                "Chiffrement TLS",
+                "Signature de mail"
+            ],
+            "correct_answer": "Vérification en temps réel",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "La clé privée doit être :",
+            "choices": [
+                "Publique",
+                "Partagée",
+                "Secrète",
+                "Envoyée au client"
+            ],
+            "correct_answer": "Secrète",
+            "category": "04_Chiffrement_Asymétrique"
+        },
+        {
+            "question": "Une PKI est :",
+            "choices": [
+                "Un protocole de communication",
+                "Un algorithme de chiffrement",
+                "Une infrastructure de gestion des clés",
+                "Un algorithme de hashage"
+            ],
+            "correct_answer": "Une infrastructure de gestion des clés",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le but principal d'un certificat est :",
+            "choices": [
+                "garantir l'autorisation",
+                "Authentifier une identité",
+                "garantir la traçabilité",
+                "Autoriser une communication"
+            ],
+            "correct_answer": "Authentifier une identité",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Un certificat inclut :",
+            "choices": [
+                "une période de validité",
+                "une clé privée",
+                "l'adresse IP du serveur",
+                "l'adresse IP du client"
+            ],
+            "correct_answer": "une période de validité",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Lors de la vérification côté client :",
+            "choices": [
+                "Le client ignore la CA",
+                "Le client génère un certificat",
+                "Le client envoie la clé privée",
+                "Le client valide la chaîne de confiance"
+            ],
+            "correct_answer": "Le client valide la chaîne de confiance",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Un certificat expiré est :",
+            "choices": [
+                "Auto-signé",
+                "Refusé",
+                "Auto-renouvelé",
+                "Ignoré"
+            ],
+            "correct_answer": "Refusé",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "CSRF signifie :",
+            "choices": [
+                "Certificate Security Rule Framework",
+                "Cryptographic Secure Request Function",
+                "Cross-Site Request Forgery",
+                "Client Side Request Format"
+            ],
+            "correct_answer": "Cross-Site Request Forgery",
+            "category": "T03_Gestion des risques"
+        },
+        {
+            "question": "Un certificat wildcard couvre :",
+            "choices": [
+                "Une seule IP",
+                "Tous les protocoles",
+                "un seul sous-domaine",
+                "Plusieurs sous-domaines"
+            ],
+            "correct_answer": "Plusieurs sous-domaines",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "Le protocole HTTPS utilise :",
+            "choices": [
+                "FTP",
+                "TLS",
+                "SSH",
+                "DNS"
+            ],
+            "correct_answer": "TLS",
+            "category": "06_Authentification"
+        },
+        {
+            "question": "La vérification d'un certificat inclut :",
+            "choices": [
+                "Signature",
+                "Validité",
+                "Révocation"
+            ],
+            "correct_answer": [
+                "Signature",
+                "Validité",
+                "Révocation"
+            ],
+            "category": "06_Authentification"
+        }
+    ]
+}

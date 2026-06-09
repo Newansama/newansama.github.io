@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Cybersecu</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1>Quiz Cybersecu</h1>
+      <div class="meta">
+      </div>
+    </header>
+
+    <main class="card">
+      <section id="startScreen" class="screen">
+        <h2>Prêt ? 👇</h2>
+        <p>
+          Tu verras une question à la fois. À la fin, tu auras ton score
+          et la liste des bonnes/mauvaises réponses.
+        </p>
+
+        <div class="row">
+  <label class="small muted" for="questionLimitSelect">
+    Nombre de questions :
+  </label>
+  <select id="questionLimitSelect" class="select">
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40">40</option>
+    <option value="50">50</option>
+    <option value="999999" selected>Toutes</option>
+  </select>
+</div>
+
+        <div class="row">
+          <button id="btnStart" class="primary">Commencer</button>
+        </div>
+      </section>
+
+      <section id="quizScreen" class="screen" hidden>
+        <div class="questionHeader">
+          <div class="tag" id="questionCount">Category</div>
+        </div>
+
+        <h2 id="questionText">—</h2>
+        <p id="questSub" class="small muted hidden">Une question a choix multiple ne veut pas dire qu'il y a forcément plus d'une reponses.</p>
+
+        <form id="answerForm" class="answers" autocomplete="off">
+        </form>
+
+        <div class="actions">
+           <button id="btnBack" class="ghost" hidden>Retour</button>
+          <button id="btnValidate" class="primary">Valider</button>
+          <button id="btnNext" class="primary" hidden>Suivant</button>
+        </div>
+
+        <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+
+        <div class="small muted">
+          Important : si tu as une réponse fausse, on t’indique à la fin la <b>catégorie</b> à revoir.
+        </div>
+        <div id="sideFrame" class="sideFrame hidden">
+  <di>Progression</h3>
+  <div id="questionFrame" class="questionFrame"></div>
+</div>
+      </section>
+
+      <section id="resultScreen" class="screen" hidden>
+        <h2>Résultats</h2>
+
+        <div class="scoreBox">
+          <div class="scoreBig">
+            <span>Score final :</span>
+            <strong id="finalScore">0</strong>
+          </div>
+          <div class="scoreSub">
+            <span id="maxScore">—</span>
+          </div>
+        </div>
+
+        <h3>Détails</h3>
+        <div id="resultsList" class="resultsList"></div>
+
+        <div class="row">
+          <button id="btnRestart" class="primary">Recommencer</button>
+          <button id="btnReturn" class="primary">Acueil</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
