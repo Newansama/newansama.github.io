@@ -767,17 +767,6 @@
             "category": "03_Chiffrement_Symétrique"
         },
         {
-            "question": "Une clé symétrique doit être :",
-            "choices": [
-                "Publique",
-                "Privée et secrète",
-                "Partagée librement",
-                "Optionnelle"
-            ],
-            "correct_answer": "Privée et secrète",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
             "question": "Le chiffrement symétrique est souvent utilisé pour :",
             "choices": [
                 "Signer des documents",
@@ -1724,17 +1713,6 @@
         "category": ""
     },
     {
-        "question": "Quel est le principal inconvénient du chiffrement symétrique ?",
-        "choices": [
-            "Trop lent",
-            "Mauvaise sécurité",
-            "Distribution de la clé",
-            "Trop complexe"
-        ],
-        "correct_answer": "Distribution de la clé",
-        "category": ""
-    },
-    {
         "question": "Une clé symétrique doit être :",
         "choices": [
             "Publique",
@@ -1743,17 +1721,6 @@
             "Optionnelle"
         ],
         "correct_answer": "Privée et sécrète",
-        "category": ""
-    },
-    {
-        "question": "Le chiffrement symétrique est souvent utilisé pour :",
-        "choices": [
-            "Signer des documents",
-            "Chiffrer de gros volumes de données",
-            "Vérifier l'identité",
-            "Générer des clés publiques"
-        ],
-        "correct_answer": "Chiffrer de gros volumes de données",
         "category": ""
     },
     {
@@ -1779,28 +1746,6 @@
         "category": ""
     },
     {
-        "question": "Une fonction de hachage produit :",
-        "choices": [
-            "Une clé",
-            "Une signature",
-            "Une empreinte",
-            "Un mot de passe"
-        ],
-        "correct_answer": "Une empreinte",
-        "category": ""
-    },
-    {
-        "question": "Une fonction de hachage est :",
-        "choices": [
-            "Réversible",
-            "Irréversible",
-            "Symétrique",
-            "Lente"
-        ],
-        "correct_answer": "Irréversible",
-        "category": ""
-    },
-    {
         "question": "Exemple de fonction de hachage :",
         "choices": [
             "RSA",
@@ -1809,39 +1754,6 @@
             "ECC"
         ],
         "correct_answer": "SHA-256",
-        "category": ""
-    },
-    {
-        "question": "Deux entrées identiques dans une fonction de hachage donnent :",
-        "choices": [
-            "Des résultats différents",
-            "Le même hash",
-            "Une erreur",
-            "Rien"
-        ],
-        "correct_answer": "Le même hash",
-        "category": ""
-    },
-    {
-        "question": "Une collision est :",
-        "choices": [
-            "Une erreur réseau",
-            "Deux entrées avec le même hash",
-            "Une signature cassée",
-            "Une clé cassée"
-        ],
-        "correct_answer": "Deux entrées avec le même hash",
-        "category": ""
-    },
-    {
-        "question": "MD5 est aujourd'hui :",
-        "choices": [
-            "Très sécurisé",
-            "Obsolète",
-            "un algorithme de chiffrement symétrique",
-            "un algorithme de chiffrement asymétrique"
-        ],
-        "correct_answer": "Obsolète",
         "category": ""
     },
     {
@@ -1856,17 +1768,6 @@
         "category": ""
     },
     {
-        "question": "Le hachage est utilisé pour :",
-        "choices": [
-            "Chiffrer",
-            "Stocker des mots de passe",
-            "Envoyer des emails",
-            "Compiler du code"
-        ],
-        "correct_answer": "Stocker des mots de passe",
-        "category": ""
-    },
-    {
         "question": "Le hachage garantit :",
         "choices": [
             "Confidentialité",
@@ -1875,72 +1776,6 @@
             "Rapidité"
         ],
         "correct_answer": "Intégrité",
-        "category": ""
-    },
-    {
-        "question": "Une signature numérique garantit :",
-        "choices": [
-            "La vitesse",
-            "L'authenticité",
-            "Le stockage",
-            "La compression"
-        ],
-        "correct_answer": "L'authenticité",
-        "category": ""
-    },
-    {
-        "question": "Une signature numérique utilise :",
-        "choices": [
-            "Une clé symétrique",
-            "Une clé privée",
-            "Aucune clé",
-            "Une clé publique uniquement"
-        ],
-        "correct_answer": "Une clé privée",
-        "category": ""
-    },
-    {
-        "question": "Une signature numérique assure :",
-        "choices": [
-            "Confidentialité uniquement",
-            "Intégrité et authenticité",
-            "Compression",
-            "Vitesse"
-        ],
-        "correct_answer": "Intégrité et authenticité",
-        "category": ""
-    },
-    {
-        "question": "Une signature numérique empêche :",
-        "choices": [
-            "Le piratage réseau",
-            "La répudiation",
-            "La compression",
-            "Le stockage"
-        ],
-        "correct_answer": "La répudiation",
-        "category": ""
-    },
-    {
-        "question": "Le processus inclut :",
-        "choices": [
-            "Hachage + chiffrement",
-            "Compression + chiffrement",
-            "Cryptage symétrique uniquement",
-            "Transmission brute"
-        ],
-        "correct_answer": "Hachage + chiffrement",
-        "category": ""
-    },
-    {
-        "question": "Quel pilier CIA est impacté par un ransomware ?",
-        "choices": [
-            "Confidentialité uniquement",
-            "Disponibilité principalement",
-            "Intégrité uniquement",
-            "Aucun"
-        ],
-        "correct_answer": "Disponibilité principalement",
         "category": ""
     },
     {
@@ -2029,17 +1864,6 @@
             "Sécuriser les accès distants"
         ],
         "correct_answer": "Sécuriser les accès distants",
-        "category": ""
-    },
-    {
-        "question": "Une clé de session TLS est :",
-        "choices": [
-            "Temporaire",
-            "Permanente",
-            "Symétrique",
-            "Asymétrique"
-        ],
-        "correct_answer": ["Temporaire", "Symétrique"],
         "category": ""
     }
     ]
