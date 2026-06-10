@@ -428,7 +428,7 @@ function computeAndRenderResults() {
         reviewEl.className = "resultBlock";
         if (isWrong) {
             reviewEl.innerHTML = `
-        <div><strong>PDF à revoir :</strong> <span class="code">${escapeHtml(q.category || "—")}</span></div>
+        
       `;
         } else {
             reviewEl.innerHTML = `<div class="correctRow">✅ Question maîtrisée</div>`;
