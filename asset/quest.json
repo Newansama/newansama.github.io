@@ -1736,28 +1736,6 @@
         "category": ""
     },
     {
-        "question": "Quel est l'avantage principal du chiffrement asymétrique ?",
-        "choices": [
-            "Rapidité",
-            "Simplicité",
-            "Pas besoin de partager une clé secrète",
-            "Faible coût"
-        ],
-        "correct_answer": "Pas besoin de partager une clé secrète",
-        "category": ""
-    },
-    {
-        "question": "Exemple de fonction de hachage :",
-        "choices": [
-            "RSA",
-            "AES",
-            "SHA-256",
-            "ECC"
-        ],
-        "correct_answer": "SHA-256",
-        "category": ""
-    },
-    {
         "question": "Une bonne fonction de hachage doit être :",
         "choices": [
             "Prévisible",
@@ -1802,28 +1780,6 @@
         "category": ""
     },
     {
-        "question": "Réduire un risque consiste à :",
-        "choices": [
-            "Supprimer l'actif",
-            "Ignorer",
-            "Mettre en place des mesures de sécurité",
-            "Supprimer la menace"
-        ],
-        "correct_answer": "Mettre en place des mesures de sécurité",
-        "category": ""
-    },
-    {
-        "question": "Éviter un risque consiste à :",
-        "choices": [
-            "Le réduire",
-            "Supprimer l'atout",
-            "Supprimer la menace",
-            "Supprimer la vulnérabilité"
-        ],
-        "correct_answer": "Supprimer l'atout",
-        "category": ""
-    },
-    {
         "question": "L'impact correspond à :",
         "choices": [
             "La fréquence",
@@ -1832,17 +1788,6 @@
             "La protection mise en place"
         ],
         "correct_answer": "Les conséquences d'un incident",
-        "category": ""
-    },
-    {
-        "question": "Quel élément contient les permissions d'accès ?",
-        "choices": [
-            "TGS",
-            "TGT",
-            "Clé privée",
-            "Certificat"
-        ],
-        "correct_answer": "TGT",
         "category": ""
     },
     {
