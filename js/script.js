@@ -6,7 +6,7 @@ const SINGLE_UI_MULTIPICK_CHANCE = 0.5;
 
 const SINGLE_WRONG_CHOICE_MALUS_PER_WRONG = 0.5;
 
-const feedbackMSG = "<strong>Une mauvaise réponse vous fait perdre des points !</strong>"
+const feedbackMSG = "<strong>Une mauvaise réponse à une question à choix multiple entraîne une perte de points.</strong>"
 
 const startScreen = document.getElementById("startScreen");
 const quizScreen = document.getElementById("quizScreen");
