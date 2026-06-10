@@ -778,6 +778,17 @@
             "category": "03_Chiffrement_Symétrique"
         },
         {
+            "question": "Le chiffrement symétrique est souvent utilisé pour :",
+            "choices": [
+                "Signer des documents",
+                "Chiffrer de gros volumes de données",
+                "Vérifier l'identité",
+                "Générer des clés publiques"
+            ],
+            "correct_answer": "Chiffrer de gros volumes de données",
+            "category": "03_Chiffrement_Symétrique"
+        },
+        {
             "question": "Quel est l'avantage principal du chiffrement asymétrique ?",
             "choices": [
                 "Rapidité",
@@ -1254,1137 +1265,782 @@
             "category": "06_Authentification"
         },
         {
-            "question": "Qu’est-ce que le chiffrement symétrique ?",
-            "choices": [
-                "Un chiffrement utilisant deux clés différentes",
-                "Un chiffrement utilisant la même clé pour chiffrer et déchiffrer",
-                "Un chiffrement uniquement utilisé sur Internet",
-                "Un chiffrement sans clé"
-            ],
-            "correct_answer": "Un chiffrement utilisant la même clé pour chiffrer et déchiffrer",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Que signifie CBC ?",
-            "choices": [
-                "Cipher Block Chaining",
-                "Cryptographic Binary Code",
-                "Central Block Cipher",
-                "Cipher Binary Chain"
-            ],
-            "correct_answer": "Cipher Block Chaining",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Le chiffrement symétrique fonctionne généralement sur :",
-            "choices": [
-                "Des images uniquement",
-                "Des fichiers binaires uniquement",
-                "Des fichiers texte uniquement",
-                "Des blocs de données ou des flux"
-            ],
-            "correct_answer": "Des blocs de données ou des flux",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Le chiffrement symétrique est souvent utilisé pour :",
-            "choices": [
-                "Chiffrer de grandes quantités de données",
-                "Chiffrer des mots de passe",
-                "Créer des signatures numériques",
-                "Identifier les utilisateurs"
-            ],
-            "correct_answer": "Chiffrer de grandes quantités de données",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Quel est le principal inconvénient du chiffrement symétrique ?",
-            "choices": [
-                "Il est trop lent",
-                "La protection et la distribution de la clé secrète",
-                "Il nécessite plusieurs clés publiques",
-                "Il ne fonctionne pas sur ordinateur"
-            ],
-            "correct_answer": "La protection et la distribution de la clé secrète",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Un chiffrement de flux (stream cipher) chiffre :",
-            "choices": [
-                "Les données bloc par bloc",
-                "Les données bit par bit ou octet par octet",
-                "Les données par fichier",
-                "Les données uniquement en base de données"
-            ],
-            "correct_answer": "Les données bit par bit ou octet par octet",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Dans le chiffrement symétrique, la clé doit être :",
-            "choices": [
-                "Publique",
-                "Changée à chaque message obligatoirement",
-                "Publiée sur Internet",
-                "Partagée secrètement entre les parties"
-            ],
-            "correct_answer": "Partagée secrètement entre les parties",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Quel ancien algorithme symétrique est aujourd’hui considéré comme peu sécurisé ?",
-            "choices": [
-                "DES",
-                "AES",
-                "ChaCha20",
-                "Camelia"
-            ],
-            "correct_answer": "DES",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Quelle taille minimum conseillée pour une clé AES ?",
-            "choices": [
-                "32 bits",
-                "64 bits",
-                "128 bits",
-                "256 bits"
-            ],
-            "correct_answer": "128 bits",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Le chiffrement symétrique assure principalement :",
-            "choices": [
-                "Intégrité",
-                "Confidentialité",
-                "Authentification",
-                "Non répudiation"
-            ],
-            "correct_answer": "Confidentialité",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "La sécurité d’un chiffrement symétrique repose sur quel principe fondamental ?",
-            "choices": [
-                "Le secret de l’algorithme",
-                "La complexité mathématique uniquement",
-                "Le secret de la clé",
-                "La taille du message"
-            ],
-            "correct_answer": "Le secret de la clé",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Un \"nonce\" protège de :",
-            "choices": [
-                "Attaque brute-force",
-                "Cryptanalyse différentielle",
-                "Attaque par rejeu",
-                "Attaque MITM (Man in the Middle)"
-            ],
-            "correct_answer": "Attaque par rejeu",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Quelle propriété doit avoir un vecteur d’initialisation (IV) dans CBC ?",
-            "choices": [
-                "Être connu",
-                "Être aléatoire ou imprévisible",
-                "Être constant",
-                "Être identique à la clé"
-            ],
-            "correct_answer": "Être aléatoire ou imprévisible",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Quel algorithme est asymétrique ?",
-            "choices": [
-                "AES",
-                "DES",
-                "RSA",
-                "Blowfish"
-            ],
-            "correct_answer": "RSA",
-            "category": "03_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Pourquoi le mode ECB (Electronic Code Book) est-il considéré comme non sécurisé ?",
-            "choices": [
-                "Il est trop lent",
-                "Les blocs identiques produisent des blocs chiffrés identiques",
-                "Il nécessite plusieurs clés",
-                "Il détruit les données"
-            ],
-            "correct_answer": "Les blocs identiques produisent des blocs chiffrés identiques",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Dans un chiffrement de flux, le texte chiffré est généralement obtenu par :",
-            "choices": [
-                "Multiplication modulaire",
-                "XOR entre le texte clair et le flux de clé",
-                "Permutation circulaire",
-                "Substitution simple"
-            ],
-            "correct_answer": "XOR entre le texte clair et le flux de clé",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Quel est le principe du chiffrement asymétrique ?",
-            "choices": [
-                "Utiliser une clé unique pour chiffrer et déchiffrer",
-                "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer et réciproquement",
-                "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer uniquement",
-                "Utiliser une clé publique pour chiffrer et une clé privée différente pour déchiffrer"
-            ],
-            "correct_answer": "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer et réciproquement",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Quel est l’avantage principal du chiffrement asymétrique ?",
-            "choices": [
-                "Il est toujours plus rapide",
-                "Il permet l’échange sécurisé de clés",
-                "Il ne nécessite pas de calcul",
-                "Il remplace totalement le chiffrement symétrique"
-            ],
-            "correct_answer": "Il permet l’échange sécurisé de clés",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Quel est l’inconvénient principal du chiffrement asymétrique ?",
-            "choices": [
-                "Il est 1000 fois plus lent",
-                "Il est 10 fois plus lent",
-                "Il est difficile à calculer",
-                "Il est difficile d’échanger les clés de manière sécurisée"
-            ],
-            "correct_answer": "Il est 1000 fois plus lent",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Quelle clé peut être diffusée publiquement ?",
-            "choices": [
-                "La clé privée",
-                "La clé publique",
-                "La clé symétrique",
-                "La clé racine"
-            ],
-            "correct_answer": "La clé publique",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Afin de garantir la confidentialité :",
-            "choices": [
-                "L'émetteur chiffre avec sa clé privée et le récepteur déchiffre avec la clé publique de l'émetteur",
-                "L'émetteur chiffre avec la clé privée du récepteur et le récepteur déchiffre avec la clé publique de l'émetteur",
-                "L'émetteur chiffre avec la clé publique du récepteur et le récepteur déchiffre avec sa clé privée",
-                "L'émetteur chiffre avec sa clé publique et le récepteur déchiffre avec la clé privée de l'émetteur"
-            ],
-            "correct_answer": "L'émetteur chiffre avec la clé publique du récepteur et le récepteur déchiffre avec sa clé privée",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Afin de garantir la non répudiation :",
-            "choices": [
-                "L'émetteur chiffre avec sa clé privée et le récepteur déchiffre avec la clé publique de l'émetteur",
-                "L'émetteur chiffre avec la clé privée du récepteur et le récepteur déchiffre avec la clé publique de l'émetteur",
-                "L'émetteur chiffre avec la clé publique du récepteur et le récepteur déchiffre avec sa clé privée",
-                "L'émetteur chiffre avec sa clé publique et le récepteur déchiffre avec la clé privée de l'émetteur"
-            ],
-            "correct_answer": "L'émetteur chiffre avec sa clé privée et le récepteur déchiffre avec la clé publique de l'émetteur",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Pourquoi un flux de clé ne doit-il jamais être réutilisé dans un chiffrement de flux ?",
-            "choices": [
-                "Cela ralentit le chiffrement",
-                "Cela permet de récupérer le texte clair par XOR des messages",
-                "Cela empêche le déchiffrement",
-                "Cela change la clé"
-            ],
-            "correct_answer": "Cela permet de récupérer le texte clair par XOR des messages",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Pour garantir l’intégrité d’un message :",
-            "choices": [
-                "L'émetteur envoie l'empreinte (hash) du message en plus de ce dernier",
-                "L'émetteur envoie le condensat (hash) du message uniquement",
-                "L'émetteur chiffre le message avec sa clé publique",
-                "L'émetteur chiffre le message avec une clé symétrique"
-            ],
-            "correct_answer": "L'émetteur envoie l'empreinte (hash) du message en plus de ce dernier",
-            "category": "05_Authentification_Integrite"
-        },
-        {
-            "question": "Une bonne fonction de hachage doit produire :",
-            "choices": [
-                "Des sorties de tailles variables",
-                "Une sortie de taille fixe",
-                "Une sortie identique quelle que soit l'entrée",
-                "Une sortie différente pour des entrées identiques"
-            ],
-            "correct_answer": "Une sortie de taille fixe",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Avec MD5, deux entrées différentes peuvent-elles produire le même hash ?",
-            "choices": [
-                "Non jamais",
-                "Oui, cela s'appelle une collision",
-                "Oui, cela s'appelle une intersection",
-                "Oui, cela s'appelle une rémanence"
-            ],
-            "correct_answer": "Oui, cela s'appelle une collision",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Quel algorithme permet l’échange de clés sans les transmettre directement ?",
-            "choices": [
-                "AES",
-                "Diffie-Hellman",
-                "SHA-256",
-                "MD5"
-            ],
-            "correct_answer": "Diffie-Hellman",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Quel algorithme est une fonction de hachage ?",
-            "choices": [
-                "RSA",
-                "AES",
-                "SHA-256",
-                "Diffie-Hellman"
-            ],
-            "correct_answer": "SHA-256",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Une fonction de hachage est :",
-            "choices": [
-                "Réversible",
-                "Non réversible",
-                "De longueur variable",
-                "De longueur fixe"
-            ],
-            "correct_answer": "Non réversible",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Une fonction de hachage sans salage est souvent utilisée pour :",
-            "choices": [
-                "Stocker les mots de passe",
-                "Compresser les images",
-                "Générer des clés WiFi",
-                "Comparer des fichiers"
-            ],
-            "correct_answer": "Comparer des fichiers",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Une fonction de hachage avec salage est souvent utilisée pour :",
-            "choices": [
-                "Stocker les mots de passe",
-                "Compresser les images",
-                "Générer des clés WiFi",
-                "Comparer des fichiers"
-            ],
-            "correct_answer": "Stocker les mots de passe",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Dans une signature numérique, quels sont les deux éléments principaux ?",
-            "choices": [
-                "Le chiffrement du message avec la clé publique du destinataire",
-                "La création de l'empreinte (hash) du message",
-                "Le chiffrement de l'empreinte (hash) avec la clé privée de l'émetteur",
-                "Le chiffrement de l'empreinte (hash) avec la clé publique de l'émetteur"
-            ],
-            "correct_answer": "La création de l'empreinte (hash) du message; Le chiffrement de l'empreinte (hash) avec la clé privée de l'émetteur",
-            "category": "05_Authentification_Integrite"
-        },
-        {
-            "question": "Le \"salage\" (salt) d’un mot de passe sert à :",
-            "choices": [
-                "Accélérer le hachage",
-                "Empêcher les attaques par rainbow tables",
-                "Réduire la taille du hash",
-                "Crypter le mot de passe"
-            ],
-            "correct_answer": "Empêcher les attaques par rainbow tables",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Pourquoi MD5 et SHA-1 ne sont plus recommandés ?",
-            "choices": [
-                "Ils sont trop lents",
-                "Ils produisent des hashes trop longs",
-                "Des collisions pratiques ont été trouvées",
-                "Ils ne fonctionnent plus sur internet"
-            ],
-            "correct_answer": "Des collisions pratiques ont été trouvées",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Un fichier signé numériquement ne correspond plus à sa signature. Conclusion ?",
-            "choices": [
-                "Le hash est cassé",
-                "La clé publique est fausse",
-                "Le fichier a été modifié",
-                "Le chiffrement a échoué"
-            ],
-            "correct_answer": "Le fichier a été modifié",
-            "category": "05_Authentification_Integrite"
-        },
-        {
-            "question": "Pourquoi utilise-t-on souvent le chiffrement hybride (asymétrique + symétrique) ?",
-            "choices": [
-                "Pour améliorer la compression",
-                "Pour combiner sécurité et performance",
-                "Pour réduire la taille des clés",
-                "Pour éviter le hachage"
-            ],
-            "correct_answer": "Pour combiner sécurité et performance",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Un administrateur veut vérifier qu’un fichier téléchargé n’a pas été modifié. Que doit-il faire ?",
-            "choices": [
-                "Le chiffrer",
-                "Vérifier son hash",
-                "Changer ses droits",
-                "Compresser le fichier"
-            ],
-            "correct_answer": "Vérifier son hash",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "L’effet avalanche signifie que :",
-            "choices": [
-                "Le hash est corrompu",
-                "Un petit changement d’entrée modifie fortement la sortie",
-                "Les collisions sont impossibles",
-                "La fonction est irréversible"
-            ],
-            "correct_answer": "Un petit changement d’entrée modifie fortement la sortie",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Un site stocke les mots de passe en SHA-256 sans salt. Quel est le principal risque ?",
-            "choices": [
-                "Attaque MITM",
-                "Attaque par collision",
-                "Attaque RSA",
-                "Attaque par rainbow tables"
-            ],
-            "correct_answer": "Attaque par rainbow tables",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Une attaque par collision vise à :",
-            "choices": [
-                "Trouver le mot de passe original",
-                "Trouver deux entrées ayant le même hash",
-                "Déchiffrer un message",
-                "Trouver la clé privée"
-            ],
-            "correct_answer": "Trouver deux entrées ayant le même hash",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Exemple de fonction de hachage :",
-            "choices": [
-                "RSA",
-                "AES",
-                "SHA-256",
-                "ECC"
-            ],
-            "correct_answer": "SHA-256",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Quel est le principal inconvénient du chiffrement symétrique ?",
-            "choices": [
-                "Trop lent",
-                "Mauvaise sécurité",
-                "Distribution de la clé",
-                "Trop complexe"
-            ],
-            "correct_answer": "Distribution de la clé",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Une fonction de hachage est :",
-            "choices": [
-                "Réversible",
-                "Irréversible",
-                "Symétrique",
-                "Lente"
-            ],
-            "correct_answer": "Irréversible",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Une fonction de hachage produit :",
-            "choices": [
-                "Une clé",
-                "Une signature",
-                "Une empreinte",
-                "Un mot de passe"
-            ],
-            "correct_answer": "Une empreinte",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Le chiffrement asymétrique est souvent utilisé pour :",
-            "choices": [
-                "Chiffrer de grandes données",
-                "Échanger des clés",
-                "Compresser des fichiers",
-                "Supprimer des données"
-            ],
-            "correct_answer": "Échanger des clés",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Le chiffrement symétrique est souvent utilisé pour :",
-            "choices": [
-                "Signer des documents",
-                "Chiffrer de gros volumes de données",
-                "Vérifier l’identité",
-                "Générer des clés publiques"
-            ],
-            "correct_answer": "Chiffrer de gros volumes de données",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Une clé symétrique doit être :",
-            "choices": [
-                "Publique",
-                "Privée et secrète",
-                "Partagée librement",
-                "Optionnelle"
-            ],
-            "correct_answer": "Privée et secrète",
-            "category": "03_Chiffrement_Symétrique"
-        },
-        {
-            "question": "Deux entrées identiques dans une fonction de hachage donnent :",
-            "choices": [
-                "Des résultats différents",
-                "Le même hash",
-                "Une erreur",
-                "Rien"
-            ],
-            "correct_answer": "Le même hash",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Une signature numérique garantit :",
-            "choices": [
-                "La vitesse",
-                "L’authenticité",
-                "Le stockage",
-                "La compression"
-            ],
-            "correct_answer": "L’authenticité",
-            "category": "05_Authentification_Integrite"
-        },
-        {
-            "question": "Le hachage est utilisé pour :",
-            "choices": [
-                "Chiffrer",
-                "Stocker des mots de passe",
-                "Envoyer des emails",
-                "Compiler du code"
-            ],
-            "correct_answer": "Stocker des mots de passe",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "MD5 est aujourd’hui :",
-            "choices": [
-                "Très sécurisé",
-                "Obsolète",
-                "un algorithme de chiffrement symétrique",
-                "un algorithme de chiffrement asymétrique"
-            ],
-            "correct_answer": "Obsolète",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Une signature numérique empêche :",
-            "choices": [
-                "Le piratage réseau",
-                "La répudiation",
-                "La compression",
-                "Le stockage"
-            ],
-            "correct_answer": "La répudiation",
-            "category": "05_Authentification_Integrite"
-        },
-        {
-            "question": "Une collision est :",
-            "choices": [
-                "Une erreur réseau",
-                "Deux entrées avec le même hash",
-                "Une signature cassée",
-                "Une clé cassée"
-            ],
-            "correct_answer": "Deux entrées avec le même hash",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Une bonne fonction de hachage doit être :",
-            "choices": [
-                "Prévisible",
-                "Rapide et résistante aux collisions",
-                "Lente",
-                "Réversible"
-            ],
-            "correct_answer": "Rapide et résistante aux collisions",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Le hachage garantit :",
-            "choices": [
-                "Confidentialité",
-                "Intégrité",
-                "Disponibilité",
-                "Rapidité"
-            ],
-            "correct_answer": "Intégrité",
-            "category": "05_Hachage"
-        },
-        {
-            "question": "Une signature numérique utilise :",
-            "choices": [
-                "Une clé symétrique",
-                "Une clé privée",
-                "Aucune clé",
-                "Une clé publique uniquement"
-            ],
-            "correct_answer": "Une clé privée",
-            "category": "04_Chiffrement_Asymétrique"
-        },
-        {
-            "question": "Une signature numérique assure :",
-            "choices": [
-                "Confidentialité uniquement",
-                "Intégrité et authenticité",
-                "Compression",
-                "Vitesse"
-            ],
-            "correct_answer": "Intégrité et authenticité",
-            "category": "05_Authentification_Integrite"
-        },
-        {
-            "question": "Que signifie CIA en cybersécurité ?",
-            "choices": [
-                "Confidentiality, Integrity, Availability",
-                "Confidentiality, Integrity, Authorization",
-                "Confidentiality, Integrity, Accounting",
-                "Confidentiality, Integrity, Authentication"
-            ],
-            "correct_answer": "Confidentiality, Integrity, Availability",
-            "category": "01_Bases_Cybersecurite"
-        },
-        {
-            "question": "L’autorisation correspond à :",
-            "choices": [
-                "Vérifier l’identité",
-                "Enregistrer les logs",
-                "Chiffrer les données",
-                "Définir des droits d’accès"
-            ],
-            "correct_answer": "Définir des droits d’accès",
-            "category": "02_Authentification_Autorisation"
-        },
-        {
-            "question": "Accounting permet :",
-            "choices": [
-                "Bloquer les attaques",
-                "Tracer les actions",
-                "Authentifier",
-                "Autoriser"
-            ],
-            "correct_answer": "Tracer les actions",
-            "category": "02_Authentification_Autorisation"
-        },
-        {
-            "question": "Que signifie AAA ?",
-            "choices": [
-                "Authentication - Authorization - Accounting",
-                "Authentication - Authorization - Availability",
-                "Authentication - Access - Availability",
-                "Auditing - Authorization - Availability"
-            ],
-            "correct_answer": "Authentication - Authorization - Accounting",
-            "category": "02_Authentification_Autorisation"
-        },
-        {
-            "question": "L’intégrité assure :",
-            "choices": [
-                "La non répudiation",
-                "L’absence de modification non autorisée",
-                "L’accès sécurisé",
-                "Le chiffrement"
-            ],
-            "correct_answer": "L’absence de modification non autorisée",
-            "category": "01_Bases_Cybersecurite"
-        },
-        {
-            "question": "La disponibilité signifie :",
-            "choices": [
-                "Données chiffrées",
-                "Authentification forte",
-                "Accès aux données quand nécessaire",
-                "Accès limité"
-            ],
-            "correct_answer": "Accès aux données quand nécessaire",
-            "category": "01_Bases_Cybersecurite"
-        },
-        {
-            "question": "Le processus inclut :",
-            "choices": [
-                "Hachage + chiffrement",
-                "Compression + chiffrement",
-                "Cryptage symétrique uniquement",
-                "Transmission brute"
-            ],
-            "correct_answer": "Hachage + chiffrement",
-            "category": "06_Protocoles_Securite"
-        },
-        {
-            "question": "Une fuite de données affecte :",
-            "choices": [
-                "Disponibilité",
-                "Confidentialité",
-                "Intégrité",
-                "Accounting"
-            ],
-            "correct_answer": "Confidentialité",
-            "category": "01_Bases_Cybersecurite"
-        },
-        {
-            "question": "Quel pilier CIA est impacté par un ransomware ?",
-            "choices": [
-                "Confidentialité uniquement",
-                "Disponibilité principalement",
-                "Intégrité uniquement",
-                "Aucun"
-            ],
-            "correct_answer": "Disponibilité principalement",
-            "category": "01_Bases_Cybersecurite"
-        },
-        {
-            "question": "Une menace est :",
-            "choices": [
-                "Une faiblesse interne",
-                "Un risque",
-                "Une cause potentielle d’incident",
-                "Une panne"
-            ],
-            "correct_answer": "Une cause potentielle d’incident",
-            "category": "07_Risk_Management"
-        },
-        {
-            "question": "Une vulnérabilité est :",
-            "choices": [
-                "Une protection",
-                "Une attaque",
-                "Un actif",
-                "Une faiblesse exploitable"
-            ],
-            "correct_answer": "Une faiblesse exploitable",
-            "category": "07_Risk_Management"
-        },
-        {
-            "question": "Exemple de vulnérabilité :",
-            "choices": [
-                "Logiciel non mis à jour",
-                "Malware",
-                "Attaquant",
-                "Phishing"
-            ],
-            "correct_answer": "Logiciel non mis à jour",
-            "category": "07_Risk_Management"
-        },
-        {
-            "question": "Quel exemple relève de l’authentification ?",
-            "choices": [
-                "Donner accès à un dossier",
-                "Enregistrer un log",
-                "Vérifier un mot de passe",
-                "Rendre disponible un fichier"
-            ],
-            "correct_answer": "Vérifier un mot de passe",
-            "category": "02_Authentification_Autorisation"
-        },
-        {
-            "question": "Le risque est :",
-            "choices": [
-                "Une menace",
-                "Une faille",
-                "La combinaison menace + vulnérabilité",
-                "La combinaison menace + vulnérabilité + atout"
-            ],
-            "correct_answer": "La combinaison menace + vulnérabilité + atout",
-            "category": "07_Risk_Management"
-        },
-        {
-            "question": "Exemple d’atout :",
-            "choices": [
-                "Base de données client",
-                "Virus",
-                "Attaque DDoS",
-                "Exploit"
-            ],
-            "correct_answer": "Base de données client",
-            "category": "07_Risk_Management"
-        },
-        {
-            "question": "La gestion des risques consiste à :",
-            "choices": [
-                "Supprimer tous les risques",
-                "Identifier et traiter les risques",
-                "Ignorer les menaces",
-                "Installer un antivirus"
-            ],
-            "correct_answer": "Identifier et traiter les risques",
-            "category": "07_Gestion_des_risques"
-        },
-        {
-            "question": "La première étape de la gestion des risques est :",
-            "choices": [
-                "Traitement",
-                "Acceptation",
-                "Suppression",
-                "Identification"
-            ],
-            "correct_answer": "Identification",
-            "category": "07_Gestion_des_risques"
-        },
-        {
-            "question": "Une vulnérabilité sans menace :",
-            "choices": [
-                "Est toujours critique",
-                "Est une attaque",
-                "Supprime les données",
-                "N’entraîne pas de risque immédiat"
-            ],
-            "correct_answer": "N’entraîne pas de risque immédiat",
-            "category": "07_Gestion_des_risques"
-        },
-        {
-            "question": "Accepter un risque signifie :",
-            "choices": [
-                "Le supprimer",
-                "Le tolérer",
-                "Le transférer",
-                "L’ignorer totalement"
-            ],
-            "correct_answer": "Le tolérer",
-            "category": "07_Gestion_des_risques"
-        },
-        {
-            "question": "Le traitement du risque inclut :",
-            "choices": [
-                "Réduire, transférer, accepter ou éviter les risques",
-                "Supprimer internet",
-                "Détruire données",
-                "Réduire les risques"
-            ],
-            "correct_answer": "Réduire, transférer, accepter ou éviter les risques",
-            "category": "07_Gestion_des_risques"
-        },
-        {
-            "question": "Le risque sur atout spécifique dépend de :",
-            "choices": [
-                "Uniquement la menace",
-                "Uniquement la vulnérabilité",
-                "Menace et vulnérabilité",
-                "Protection"
-            ],
-            "correct_answer": "Menace et vulnérabilité",
-            "category": "07_Gestion_des_risques"
-        },
-        {
-            "question": "Réduire un risque consiste à :",
-            "choices": [
-                "Supprimer l’actif",
-                "Ignorer",
-                "Mettre en place des mesures de sécurité",
-                "Supprimer la menace"
-            ],
-            "correct_answer": "Mettre en place des mesures de sécurité",
-            "category": "07_Gestion_des_risques"
-        },
-        {
-            "question": "L’analyse des risques permet :",
-            "choices": [
-                "Supprimer les vulnérabilités",
-                "Évaluer impact et probabilité",
-                "Installer une protection",
-                "Chiffrer les données"
-            ],
-            "correct_answer": "Évaluer impact et probabilité",
-            "category": "07_Gestion_des_risques"
-        },
-        {
-            "question": "Éviter un risque consiste à :",
-            "choices": [
-                "Le réduire",
-                "Supprimer l’atout",
-                "Supprimer la menace",
-                "Supprimer la vulnérabilité"
-            ],
-            "correct_answer": "Supprimer l’atout",
-            "category": "T03_Gestion des risques"
-        },
-        {
-            "question": "La probabilité correspond à :",
-            "choices": [
-                "L’impact",
-                "La valeur de l’actif",
-                "La chance qu’un événement survienne",
-                "La vulnérabilité"
-            ],
-            "correct_answer": "La chance qu’un événement survienne",
-            "category": "T03_Gestion des risques"
-        },
-        {
-            "question": "L’impact correspond à :",
-            "choices": [
-                "La fréquence",
-                "La menace",
-                "Les conséquences d’un incident",
-                "La protection mise en place"
-            ],
-            "correct_answer": "Les conséquences d’un incident",
-            "category": "T03_Gestion des risques"
-        },
-        {
-            "question": "Le KDC utilise :",
-            "choices": [
-                "TGT et TGS",
-                "DNS et DHCP",
-                "LDAP et HTTP",
-                "FTP et SMTP"
-            ],
-            "correct_answer": "TGT et TGS",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Quel est le rôle principal du KDC ?",
-            "choices": [
-                "Stocker les mots de passe",
-                "Distribuer des tickets d’authentification",
-                "Chiffrer les disques",
-                "Gérer les certificats"
-            ],
-            "correct_answer": "Distribuer des tickets d’authentification",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Que fournit l’AS (Authentication Service) de Kerberos ?",
-            "choices": [
-                "Un certificat",
-                "Un ticket TGS",
-                "Un ticket TGT",
-                "Une clé privée"
-            ],
-            "correct_answer": "Un ticket TGT",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Le TGT sert à :",
-            "choices": [
-                "Accéder directement aux service",
-                "Authentifier un serveur",
-                "Chiffrer les fichiers",
-                "Obtenir des tickets de service"
-            ],
-            "correct_answer": "Obtenir des tickets de service",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Supprimer l’atout / la menace / la vulnérabilité : laquelle correspond à l’option sélectionnée comme réponse correcte dans l’image ?",
-            "choices": [
-                "Supprimer l’atout",
-                "Supprimer la menace",
-                "Supprimer la vulnérabilité",
-                "Aucune des réponses"
-            ],
-            "correct_answer": "Supprimer la vulnérabilité",
-            "category": "T03_Gestion des risques"
-        },
-        {
-            "question": "Le TGT sert à :",
-            "choices": [
-                "Accéder directement aux service",
-                "Authentifier un serveur",
-                "Chiffrer les fichiers",
-                "Obtenir des tickets de service"
-            ],
-            "correct_answer": "Obtenir des tickets de service",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Dans Kerberos, le mot de passe est :",
-            "choices": [
-                "Envoyé en clair",
-                "Stocké sur le serveur web",
-                "Jamais transmis directement",
-                "Haché et envoyé"
-            ],
-            "correct_answer": "Jamais transmis directement",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Quel service fournit les permissions d’accès ?",
-            "choices": [
-                "TGS",
-                "TGT",
-                "Clé privée",
-                "Certificat"
-            ],
-            "correct_answer": "Certificat",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Une faiblesse classique de Kerberos est :",
-            "choices": [
-                "Absence de chiffrement",
-                "Dépendance à l’heure système",
-                "Utilisation de HTTP",
-                "Absence de tickets"
-            ],
-            "correct_answer": "Dépendance à l’heure système",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Quelle attaque cible Kerberos avec des tickets volés ?",
-            "choices": [
-                "Pass-the-Ticket",
-                "CSRF",
-                "SQL Injection",
-                "XSS"
-            ],
-            "correct_answer": "Pass-the-Ticket",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Le KDC est généralement intégré à :",
-            "choices": [
-                "IIS",
-                "Apache",
-                "Active Directory",
-                "MySQL"
-            ],
-            "correct_answer": "Active Directory",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Quel protocole utilise Kerberos ?",
-            "choices": [
-                "HTTP",
-                "FTP",
-                "ICMP",
-                "UDP/TCP"
-            ],
-            "correct_answer": "UDP/TCP",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Dans l’hypothèse PKI, une clé privée correspond à :",
-            "choices": [
-                "Une clé privée",
-                "Un mot de passe",
-                "Une clé publique",
-                "Un hash de fichier"
-            ],
-            "correct_answer": "Une clé publique",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Une CA est :",
-            "choices": [
-                "Un serveur DNS",
-                "Un firewall",
-                "Un proxy",
-                "Une autorité de certification"
-            ],
-            "correct_answer": "Une autorité de certification",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Qui signe un certificat ?",
-            "choices": [
-                "Le client",
-                "Une CA",
-                "Le serveur",
-                "Le navigateur"
-            ],
-            "correct_answer": "Une CA",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Le champ \"CN\" représente :",
-            "choices": [
-                "Clé numérique",
-                "Nom commun",
-                "Certificat numérique",
-                "Code identifiant le réseau"
-            ],
-            "correct_answer": "Nom commun",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Le CSR signifie :",
-            "choices": [
-                "Certificate Signing Request",
-                "Certificate Security Rule",
-                "Cryptographic Signature Request",
-                "Certificate System Root"
-            ],
-            "correct_answer": "Certificate Signing Request",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Un certificat auto-signé est :",
-            "choices": [
-                "Signé par une CA",
-                "Invalide",
-                "Signé par l'hôte qui utilise le certificat",
-                "Expiré"
-            ],
-            "correct_answer": "Signé par l'hôte qui utilise le certificat",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Un certificat numérique contient :",
-            "choices": [
-                "Une clé privée",
-                "Un mot de passe",
-                "Une clé publique",
-                "Un hash de fichier"
-            ],
-            "correct_answer": "Une clé publique",
-            "category": "06_Authentification"
-        },
-        {
-            "question": "Une faiblesse classique de Kerberos est :",
-            "choices": [
-                "Absence de chiffrement",
-                "Dépendance à l’heure système",
-                "Utilisation de HTTP",
-                "Absence de tickets"
-            ],
-            "correct_answer": "Dépendance à l’heure système",
-            "category": "06_Authentification"
-        }
+        "question": "Qu'est-ce que le chiffrement symétrique ?",
+        "choices": [
+            "Un chiffrement utilisant deux clés différentes",
+            "Un chiffrement utilisant la même clé pour chiffrer et déchiffrer",
+            "Un chiffrement uniquement utilisé sur Internet",
+            "Un chiffrement sans clé"
+        ],
+        "correct_answer": "Un chiffrement utilisant la même clé pour chiffrer et déchiffrer",
+        "category": ""
+    },
+    {
+        "question": "Quel est le principal inconvénient du chiffrement symétrique ?",
+        "choices": [
+            "Il est trop lent",
+            "La protection et la distribution de la clé secrète",
+            "Il nécessite plusieurs clés publiques",
+            "Il ne fonctionne pas sur ordinateur"
+        ],
+        "correct_answer": "La protection et la distribution de la clé secrète",
+        "category": ""
+    },
+    {
+        "question": "Quelle taille minimum conseillée pour une clé AES ?",
+        "choices": [
+            "32 bits",
+            "64 bits",
+            "128 bits",
+            "256 bits"
+        ],
+        "correct_answer": "128 bits",
+        "category": ""
+    },
+    {
+        "question": "Quel ancien algorithme symétrique est aujourd'hui considéré comme peu sécurisé ?",
+        "choices": [
+            "DES",
+            "AES",
+            "ChaCha20",
+            "Camelia"
+        ],
+        "correct_answer": "DES",
+        "category": ""
+    },
+    {
+        "question": "Dans le chiffrement symétrique la clé doit être :",
+        "choices": [
+            "Publique",
+            "Changée à chaque message obligatoirement",
+            "Publiée sur Internet",
+            "Partagée secrètement entre les parties"
+        ],
+        "correct_answer": "Partagée secrètement entre les parties",
+        "category": ""
+    },
+    {
+        "question": "Le chiffrement symétrique est souvent utilisé pour :",
+        "choices": [
+            "Chiffrer des grandes quantités de données",
+            "Chiffrer des mots de passe",
+            "Créer des signatures numériques",
+            "Identifier les utilisateurs"
+        ],
+        "correct_answer": "Chiffrer des grandes quantités de données",
+        "category": ""
+    },
+    {
+        "question": "Lequel des éléments suivants est un mode opératoire de chiffrement symétrique ?",
+        "choices": [
+            "FTP",
+            "SSL",
+            "CBC",
+            "TLS"
+        ],
+        "correct_answer": "CBC",
+        "category": ""
+    },
+    {
+        "question": "Que signifie CBC ?",
+        "choices": [
+            "Cipher Block Chaining",
+            "Cryptographic Binary Code",
+            "Central Block Cipher",
+            "Cipher Binary Chain"
+        ],
+        "correct_answer": "Cipher Block Chaining",
+        "category": ""
+    },
+    {
+        "question": "Le chiffrement symétrique fonctionne généralement sur :",
+        "choices": [
+            "Des images uniquement",
+            "Des fichiers binaires uniquement",
+            "Des fichiers texte uniquement",
+            "Des blocs de données ou des flux"
+        ],
+        "correct_answer": "Des blocs de données ou des flux",
+        "category": ""
+    },
+    {
+        "question": "Un chiffrement de flux (stream cipher) chiffre :",
+        "choices": [
+            "Les données bloc par bloc",
+            "Les données bit par bit ou octet par octet",
+            "Les donnés par fichier",
+            "Les données uniquement en base de données"
+        ],
+        "correct_answer": "Les données bit par bit ou octet par octet",
+        "category": ""
+    },
+    {
+        "question": "Quel algorithme est asymétrique ?",
+        "choices": [
+            "AES",
+            "DES",
+            "RSA",
+            "Blowfish"
+        ],
+        "correct_answer": "RSA",
+        "category": ""
+    },
+    {
+        "question": "Quel est l'objectif principal du chiffrement ?",
+        "choices": [
+            "Intégrité",
+            "Confidentialité",
+            "Authentification",
+            "Non répudiation"
+        ],
+        "correct_answer": "Confidentialité",
+        "category": ""
+    },
+    {
+        "question": "Pourquoi en mode ECB (Electronic Code Book) est-il considéré comme non sécurisé ?",
+        "choices": [
+            "Il est trop lent",
+            "Les blocs identiques produisent des blocs chiffrés identiques",
+            "Il nécessite plusieurs clés",
+            "Il détruit les données"
+        ],
+        "correct_answer": "Les blocs identiques produisent des blocs chiffrés identiques",
+        "category": ""
+    },
+    {
+        "question": "Dans le mode CBC, quel élément est nécessaire pour le premier bloc ?",
+        "choices": [
+            "Une clé secondaire",
+            "Un vecteur d'initialisation (IV)",
+            "Une clé publique",
+            "Un hachage"
+        ],
+        "correct_answer": "Un vecteur d'initialisation (IV)",
+        "category": ""
+    },
+    {
+        "question": "Quelle propriété doit avoir un vecteur d'initialisation (IV) dans CBC ?",
+        "choices": [
+            "Être connu",
+            "Être aléatoire ou imprévisible",
+            "Être constant",
+            "Être identique à la clé"
+        ],
+        "correct_answer": "Être aléatoire ou imprévisible",
+        "category": ""
+    },
+    {
+        "question": "Un « nonce » protège de :",
+        "choices": [
+            "Attaque brute-force",
+            "Cryptanalyse différentielle",
+            "Attaque par rejeu",
+            "Attaque MITM (Men in The Middle)"
+        ],
+        "correct_answer": "Attaque par rejeu",
+        "category": ""
+    },
+    {
+        "question": "La sécurité d'un chiffrement symétrique repose sur quel principe fondamental ?",
+        "choices": [
+            "Le secret de l'algorithme",
+            "La complexité mathématique uniquement",
+            "Le secret de la clé",
+            "La taille du message"
+        ],
+        "correct_answer": "Le secret de la clé",
+        "category": ""
+    },
+    {
+        "question": "Dans un chiffrement de flux, le texte chiffré est généralement obtenu par :",
+        "choices": [
+            "Multiplication modulaire",
+            "XOR entre le texte clair et le flux de clé",
+            "Permutation circulaire",
+            "Substitution simple"
+        ],
+        "correct_answer": "XOR entre le texte clair et le flux de clé",
+        "category": ""
+    },
+    {
+        "question": "Pourquoi un flux de clé ne doit-il jamais être réutilisé dans un chiffrement de flux ?",
+        "choices": [
+            "Cela ralentit le chiffrement",
+            "Cela permet de récupérer le texte clair par XOR des messages",
+            "Cela empêche le déchiffrement",
+            "Cela change la clé"
+        ],
+        "correct_answer": "Cela permet de récupérer le texte clair par XOR des messages",
+        "category": ""
+    },
+    {
+        "question": "Quel est le principe du chiffrement asymétrique ?",
+        "choices": [
+            "Utiliser une clé unique pour chiffrer et déchiffrer",
+            "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer et réciproquement",
+            "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer uniquement"
+        ],
+        "correct_answer": "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer et réciproquement",
+        "category": ""
+    },
+    {
+        "question": "Quelle clé peut être diffusée publiquement ?",
+        "choices": [
+            "La clé privée",
+            "La clé publique",
+            "La clé symétrique",
+            "La clé racine"
+        ],
+        "correct_answer": "La clé publique",
+        "category": ""
+    },
+    {
+        "question": "Afin de garantir la confidentialité :",
+        "choices": [
+            "L'émetteur chiffre avec sa clé privée et le récepteur déchiffre avec la clé publique de l'émetteur",
+            "L'émetteur chiffre avec la clé privée du récepteur et le récepteur déchiffre avec la clé publique de l'émetteur",
+            "L'émetteur chiffre avec la clé publique du récepteur et le récepteur déchiffre avec sa clé privée"
+        ],
+        "correct_answer": "L'émetteur chiffre avec la clé publique du récepteur et le récepteur déchiffre avec sa clé privée",
+        "category": ""
+    },
+    {
+        "question": "Afin de garantir la non-répudiation :",
+        "choices": [
+            "L'émetteur chiffre avec sa clé privée et le récepteur déchiffre avec la clé publique de l'émetteur",
+            "L'émetteur chiffre avec la clé privée du récepteur et le récepteur déchiffre avec la clé publique de l'émetteur",
+            "L'émetteur chiffre avec la clé publique du récepteur et le récepteur déchiffre avec sa clé privée"
+        ],
+        "correct_answer": "L'émetteur chiffre avec sa clé privée et le récepteur déchiffre avec la clé publique de l'émetteur",
+        "category": ""
+    },
+    {
+        "question": "Quel est l'avantage principal du chiffrement asymétrique ?",
+        "choices": [
+            "Il est toujours plus rapide",
+            "Il permet l'échange sécurisé de clés",
+            "Il ne nécessite pas de calcul",
+            "Il remplace totalement le chiffrement symétrique"
+        ],
+        "correct_answer": "Il permet l'échange sécurisé de clés",
+        "category": ""
+    },
+    {
+        "question": "Quel est l'inconvénient principal du chiffrement asymétrique ?",
+        "choices": [
+            "Il est 1000 fois plus lent",
+            "Il est 10 fois plus lent",
+            "Il est difficile à calculer",
+            "Il est difficile d'échanger les clés de manière sécurisée"
+        ],
+        "correct_answer": "Il est 1000 fois plus lent",
+        "category": ""
+    },
+    {
+        "question": "Afin de garantir l'intégrité :",
+        "choices": [
+            "L'émetteur chiffre avec sa clé privée et le récepteur déchiffre avec la clé publique de l'émetteur",
+            "L'émetteur chiffre avec sa clé publique et le récepteur déchiffre avec la clé privée de l'émetteur",
+            "L'émetteur envoie l'empreinte (hash) du message en plus de ce dernier",
+            "L'émetteur envoie le condensat (hash) du message uniquement"
+        ],
+        "correct_answer": ["L'émetteur envoie l'empreinte (hash) du message en plus de ce dernier", "L'émetteur envoie le condensat (hash) du message uniquement"],
+        "category": ""
+    },
+    {
+        "question": "Dans une signature numérique, quelles sont les deux éléments définissant la signature ?",
+        "choices": [
+            "le chiffrement du message avec la clé publique du destinataire",
+            "la création de l'empreinte (hash) par hachage du message",
+            "le chiffrement de l'empreinte (hash) avec la clé privée de l'émetteur",
+            "le chiffrement de l'empreinte (hash) avec la clé publique de l'émetteur"
+        ],
+        "correct_answer": ["la création de l'empreinte (hash) par hachage du message", "le chiffrement de l'empreinte (hash) avec la clé privée de l'émetteur"],
+        "category": ""
+    },
+    {
+        "question": "Une fonction de hachage est :",
+        "choices": [
+            "Réversible",
+            "Non réversible",
+            "De longueur variable",
+            "De longueur fixe"
+        ],
+        "correct_answer": ["Non réversible", "De longueur fixe"],
+        "category": ""
+    },
+    {
+        "question": "Quel algorithme est une fonction de hachage ?",
+        "choices": [
+            "RSA",
+            "AES",
+            "SHA-256",
+            "Diffie-Hellman"
+        ],
+        "correct_answer": "SHA-256",
+        "category": ""
+    },
+    {
+        "question": "Avec MD5, deux entrées différentes peuvent-elles produire le même hash ?",
+        "choices": [
+            "Non jamais",
+            "Oui, cela s'appelle une collision",
+            "Oui, cela s'appelle une intersection",
+            "Oui, cela s'appelle une rémanence"
+        ],
+        "correct_answer": "Oui, cela s'appelle une collision",
+        "category": ""
+    },
+    {
+        "question": "Une fonction de hachage avec salage est souvent utilisée pour ?",
+        "choices": [
+            "Stocker les mots de passe",
+            "Compresser les images",
+            "Générer des clés Wifi",
+            "Comparer des fichiers"
+        ],
+        "correct_answer": "Stocker les mots de passe",
+        "category": ""
+    },
+    {
+        "question": "Une fonction de hachage sans salage est souvent utilisée pour ?",
+        "choices": [
+            "Stocker les mots de passe",
+            "Compresser les images",
+            "Générer des clés Wifi",
+            "Comparer des fichiers"
+        ],
+        "correct_answer": "Comparer des fichiers",
+        "category": ""
+    },
+    {
+        "question": "Quel algorithme permet l'échange de clés sans les transmettre directement ?",
+        "choices": [
+            "AES",
+            "Diffie-Hellman",
+            "SHA-256",
+            "MD5"
+        ],
+        "correct_answer": "Diffie-Hellman",
+        "category": ""
+    },
+    {
+        "question": "Une bonne fonction de hachage doit produire :",
+        "choices": [
+            "Des sorties de tailles variables",
+            "Une sortie de taille fixe",
+            "Une sortie identique quelle que soit l'entrée",
+            "Une sortie différente pour de entrées identiques"
+        ],
+        "correct_answer": "Une sortie de taille fixe",
+        "category": ""
+    },
+    {
+        "question": "Pourquoi utilise-t-on souvent le chiffrement hybride (asymétrique +symétrique) ?",
+        "choices": [
+            "Pour améliorer la compression",
+            "Pour combiner sécurité et performance",
+            "Pour réduire la taille des clés",
+            "Pour éviter le hachage"
+        ],
+        "correct_answer": "Pour combiner sécurité et performance",
+        "category": ""
+    },
+    {
+        "question": "Une attaque par collision vise à :",
+        "choices": [
+            "Trouver le mot de passe original",
+            "Trouver deux entrées ayant le même hash",
+            "Déchiffrer un message",
+            "Trouver la clé privée"
+        ],
+        "correct_answer": "Trouver deux entrées ayant le même hash",
+        "category": ""
+    },
+    {
+        "question": "L'effet avalanche signifie que :",
+        "choices": [
+            "Le hash est corrompu",
+            "Un petit changement d'entrée modifie fortement la sortie",
+            "Les collisions sont impossibles",
+            "La fonction est irréversible"
+        ],
+        "correct_answer": "Un petit changement d'entrée modifie fortement la sortie",
+        "category": ""
+    },
+    {
+        "question": "Le « salage » (salt) d'un mot de passe sert à :",
+        "choices": [
+            "Accélérer le hachage",
+            "Empêcher les attaques par rainbow tables",
+            "Réduire la taille du hash",
+            "Crypter le mot de passe"
+        ],
+        "correct_answer": "Empêcher les attaques par rainbow tables",
+        "category": ""
+    },
+    {
+        "question": "Pourquoi MD5 et SHA-1 ne sont plus recommandés ?",
+        "choices": [
+            "Ils sont trop lents",
+            "Ils produisent des hashes trop longs",
+            "Des collisions pratiques ont été trouvées",
+            "Ils ne fonctionnent plus sur internet"
+        ],
+        "correct_answer": "Des collisions pratiques ont été trouvées",
+        "category": ""
+    },
+    {
+        "question": "Un site stocke les mots de passe en SHA-256 sans salt. Quel est le principal risque ?",
+        "choices": [
+            "Attaque MITM",
+            "Attaque par collision",
+            "Attaque RSA",
+            "Attaque par rainbow tables"
+        ],
+        "correct_answer": "Attaque par rainbow tables",
+        "category": ""
+    },
+    {
+        "question": "Un administrateur veut vérifier qu'un fichier téléchargé n'a pas été modifié. Que doit-il faire ?",
+        "choices": [
+            "Le chiffrer",
+            "Vérifier son hash",
+            "Changer ses droits",
+            "Compresser le fichier"
+        ],
+        "correct_answer": "Vérifier son hash",
+        "category": ""
+    },
+    {
+        "question": "Un fichier signé numériquement ne correspond plus à sa signature. Conclusion ?",
+        "choices": [
+            "Le hash est cassé",
+            "La clé publique est fausse",
+            "Le fichier a été modifié",
+            "Le chiffrement a échoué"
+        ],
+        "correct_answer": "Le fichier a été modifié",
+        "category": ""
+    },
+    {
+        "question": "Quel est le principal inconvénient du chiffrement symétrique ?",
+        "choices": [
+            "Trop lent",
+            "Mauvaise sécurité",
+            "Distribution de la clé",
+            "Trop complexe"
+        ],
+        "correct_answer": "Distribution de la clé",
+        "category": ""
+    },
+    {
+        "question": "Une clé symétrique doit être :",
+        "choices": [
+            "Publique",
+            "Privée et sécrète",
+            "Partagée librement",
+            "Optionnelle"
+        ],
+        "correct_answer": "Privée et sécrète",
+        "category": ""
+    },
+    {
+        "question": "Le chiffrement symétrique est souvent utilisé pour :",
+        "choices": [
+            "Signer des documents",
+            "Chiffrer de gros volumes de données",
+            "Vérifier l'identité",
+            "Générer des clés publiques"
+        ],
+        "correct_answer": "Chiffrer de gros volumes de données",
+        "category": ""
+    },
+    {
+        "question": "Le chiffrement asymétrique est souvent utilisé pour :",
+        "choices": [
+            "Chiffrer de gros volumes de données",
+            "Échanger des clés",
+            "Compresser des fichiers",
+            "Supprimer des données"
+        ],
+        "correct_answer": "Échanger des clés",
+        "category": ""
+    },
+    {
+        "question": "Quel est l'avantage principal du chiffrement asymétrique ?",
+        "choices": [
+            "Rapidité",
+            "Simplicité",
+            "Pas besoin de partager une clé secrète",
+            "Faible coût"
+        ],
+        "correct_answer": "Pas besoin de partager une clé secrète",
+        "category": ""
+    },
+    {
+        "question": "Une fonction de hachage produit :",
+        "choices": [
+            "Une clé",
+            "Une signature",
+            "Une empreinte",
+            "Un mot de passe"
+        ],
+        "correct_answer": "Une empreinte",
+        "category": ""
+    },
+    {
+        "question": "Une fonction de hachage est :",
+        "choices": [
+            "Réversible",
+            "Irréversible",
+            "Symétrique",
+            "Lente"
+        ],
+        "correct_answer": "Irréversible",
+        "category": ""
+    },
+    {
+        "question": "Exemple de fonction de hachage :",
+        "choices": [
+            "RSA",
+            "AES",
+            "SHA-256",
+            "ECC"
+        ],
+        "correct_answer": "SHA-256",
+        "category": ""
+    },
+    {
+        "question": "Deux entrées identiques dans une fonction de hachage donnent :",
+        "choices": [
+            "Des résultats différents",
+            "Le même hash",
+            "Une erreur",
+            "Rien"
+        ],
+        "correct_answer": "Le même hash",
+        "category": ""
+    },
+    {
+        "question": "Une collision est :",
+        "choices": [
+            "Une erreur réseau",
+            "Deux entrées avec le même hash",
+            "Une signature cassée",
+            "Une clé cassée"
+        ],
+        "correct_answer": "Deux entrées avec le même hash",
+        "category": ""
+    },
+    {
+        "question": "MD5 est aujourd'hui :",
+        "choices": [
+            "Très sécurisé",
+            "Obsolète",
+            "un algorithme de chiffrement symétrique",
+            "un algorithme de chiffrement asymétrique"
+        ],
+        "correct_answer": "Obsolète",
+        "category": ""
+    },
+    {
+        "question": "Une bonne fonction de hachage doit être :",
+        "choices": [
+            "Prévisible",
+            "Rapide et résistante aux collisions",
+            "Lente",
+            "Réversible"
+        ],
+        "correct_answer": "Rapide et résistante aux collisions",
+        "category": ""
+    },
+    {
+        "question": "Le hachage est utilisé pour :",
+        "choices": [
+            "Chiffrer",
+            "Stocker des mots de passe",
+            "Envoyer des emails",
+            "Compiler du code"
+        ],
+        "correct_answer": "Stocker des mots de passe",
+        "category": ""
+    },
+    {
+        "question": "Le hachage garantit :",
+        "choices": [
+            "Confidentialité",
+            "Intégrité",
+            "Disponibilité",
+            "Rapidité"
+        ],
+        "correct_answer": "Intégrité",
+        "category": ""
+    },
+    {
+        "question": "Une signature numérique garantit :",
+        "choices": [
+            "La vitesse",
+            "L'authenticité",
+            "Le stockage",
+            "La compression"
+        ],
+        "correct_answer": "L'authenticité",
+        "category": ""
+    },
+    {
+        "question": "Une signature numérique utilise :",
+        "choices": [
+            "Une clé symétrique",
+            "Une clé privée",
+            "Aucune clé",
+            "Une clé publique uniquement"
+        ],
+        "correct_answer": "Une clé privée",
+        "category": ""
+    },
+    {
+        "question": "Une signature numérique assure :",
+        "choices": [
+            "Confidentialité uniquement",
+            "Intégrité et authenticité",
+            "Compression",
+            "Vitesse"
+        ],
+        "correct_answer": "Intégrité et authenticité",
+        "category": ""
+    },
+    {
+        "question": "Une signature numérique empêche :",
+        "choices": [
+            "Le piratage réseau",
+            "La répudiation",
+            "La compression",
+            "Le stockage"
+        ],
+        "correct_answer": "La répudiation",
+        "category": ""
+    },
+    {
+        "question": "Le processus inclut :",
+        "choices": [
+            "Hachage + chiffrement",
+            "Compression + chiffrement",
+            "Cryptage symétrique uniquement",
+            "Transmission brute"
+        ],
+        "correct_answer": "Hachage + chiffrement",
+        "category": ""
+    },
+    {
+        "question": "Quel pilier CIA est impacté par un ransomware ?",
+        "choices": [
+            "Confidentialité uniquement",
+            "Disponibilité principalement",
+            "Intégrité uniquement",
+            "Aucun"
+        ],
+        "correct_answer": "Disponibilité principalement",
+        "category": ""
+    },
+    {
+        "question": "Une fuite de données affecte :",
+        "choices": [
+            "Disponibilité",
+            "Confidentialité",
+            "Intégrité",
+            "Accounting"
+        ],
+        "correct_answer": "Confidentialité",
+        "category": ""
+    },
+    {
+        "question": "Le risque sur atout spécifique dépend de :",
+        "choices": [
+            "Uniquement la menace",
+            "Uniquement la vulnérabilité",
+            "Menace et vulnérabilité",
+            "Protection"
+        ],
+        "correct_answer": "Menace et vulnérabilité",
+        "category": ""
+    },
+    {
+        "question": "Réduire un risque consiste à :",
+        "choices": [
+            "Supprimer l'actif",
+            "Ignorer",
+            "Mettre en place des mesures de sécurité",
+            "Supprimer la menace"
+        ],
+        "correct_answer": "Mettre en place des mesures de sécurité",
+        "category": ""
+    },
+    {
+        "question": "Éviter un risque consiste à :",
+        "choices": [
+            "Le réduire",
+            "Supprimer l'atout",
+            "Supprimer la menace",
+            "Supprimer la vulnérabilité"
+        ],
+        "correct_answer": "Supprimer l'atout",
+        "category": ""
+    },
+    {
+        "question": "L'impact correspond à :",
+        "choices": [
+            "La fréquence",
+            "La menace",
+            "Les conséquences d'un incident",
+            "La protection mise en place"
+        ],
+        "correct_answer": "Les conséquences d'un incident",
+        "category": ""
+    },
+    {
+        "question": "Quel élément contient les permissions d'accès ?",
+        "choices": [
+            "TGS",
+            "TGT",
+            "Clé privée",
+            "Certificat"
+        ],
+        "correct_answer": "TGT",
+        "category": ""
+    },
+    {
+        "question": "TLS 1.3 améliore :",
+        "choices": [
+            "La latence",
+            "Le stockage",
+            "DNS",
+            "HTTP"
+        ],
+        "correct_answer": "La latence",
+        "category": ""
+    },
+    {
+        "question": "SSH sert à :",
+        "choices": [
+            "Naviguer sur internet",
+            "Envoyer des emails",
+            "Héberger site",
+            "Sécuriser les accès distants"
+        ],
+        "correct_answer": "Sécuriser les accès distants",
+        "category": ""
+    },
+    {
+        "question": "Une clé de session TLS est :",
+        "choices": [
+            "Temporaire",
+            "Permanente",
+            "Symétrique",
+            "Asymétrique"
+        ],
+        "correct_answer": ["Temporaire", "Symétrique"],
+        "category": ""
+    }
     ]
 }
