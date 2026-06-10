@@ -1467,7 +1467,8 @@
         "choices": [
             "Utiliser une clé unique pour chiffrer et déchiffrer",
             "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer et réciproquement",
-            "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer uniquement"
+            "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer uniquement",
+            "Utiliser une clé publique pour chiffrer et sa clé privée associée pour déchiffrer et réciproquement"
         ],
         "correct_answer": "Utiliser une clé privée pour chiffrer et sa clé publique associée pour déchiffrer et réciproquement",
         "category": ""

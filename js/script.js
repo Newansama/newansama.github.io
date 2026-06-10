@@ -388,7 +388,6 @@ function computeAndRenderResults() {
         title.className = "resultTitle";
         title.innerHTML = `
       <div><strong>Q${idx + 1}.</strong> ${escapeHtml(q.question)}</div>
-      <div class="mini">Catégorie: <span class="code">${escapeHtml(q.category || "—")}</span></div>
     `;
 
         const yourAnswerEl = document.createElement("div");
