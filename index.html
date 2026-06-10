@@ -16,26 +16,28 @@
 
     <main class="card">
       <section id="startScreen" class="screen">
-        <h2>Prêt ? 👇</h2>
+        <h2>Prêt ?</h2>
         <p>
           Tu verras une question à la fois. À la fin, tu auras ton score
           et la liste des bonnes/mauvaises réponses.
         </p>
 
         <div class="row">
-  <label class="small muted" for="questionLimitSelect">
-    Nombre de questions :
-  </label>
-  <select id="questionLimitSelect" class="select">
-    <option value="5">5</option>
-    <option value="10">10</option>
-    <option value="20">20</option>
-    <option value="30">30</option>
-    <option value="40">40</option>
-    <option value="50">50</option>
-    <option value="100">100</option>
-    <option value="999999" selected>Toutes</option>
-  </select>
+  <span class="small muted">Nombre de questions :</span>
+
+  <div class="radioGroup">
+    <label><input type="radio" name="questionLimit" value="5"> 5</label>
+    <label><input type="radio" name="questionLimit" value="10"> 10</label>
+    <label><input type="radio" name="questionLimit" value="20"> 20</label>
+    <label><input type="radio" name="questionLimit" value="30"> 30</label>
+    <label><input type="radio" name="questionLimit" value="40"> 40</label>
+    <label><input type="radio" name="questionLimit" value="50"> 50</label>
+    <label><input type="radio" name="questionLimit" value="100"> 100</label>
+    <label>
+      <input type="radio" name="questionLimit" value="999999" checked>
+      Toutes
+    </label>
+  </div>
 </div>
 
         <div class="row">

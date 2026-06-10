@@ -25,8 +25,9 @@ body{
 }
 
 .app{
-  width: 40%;
-  max-width: 980px;
+  width: auto;
+  min-width: 40%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px 40px;
   overflow: visible;
@@ -208,11 +209,32 @@ body{
 }
 
 .resultsList{
-  display:flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
   margin-top: 12px;
-  list-style: none;
+}
+
+.radioGroup{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.radioGroup label{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.radioGroup input{
+  accent-color: var(--primary);
 }
 
 .resultItem{
@@ -221,6 +243,7 @@ body{
   background: rgba(255,255,255,.03);
   padding: 14px;
   list-style: none;
+  height: 100%;
 }
 
 .resultTop{
@@ -268,9 +291,9 @@ body{
 
 .sideFrame {
   position: absolute;
-  left: 100%;          /* se place à droite du card */
+  left: 100%;          
   top: 0;
-  margin-left: 16px;   /* petit espace */
+  margin-left: 16px;  
   width: 230px;
   max-height: 475px;
   padding: 12px;
@@ -284,7 +307,6 @@ body{
   scrollbar-gutter: stable both-edges;
 }
 
-/* Chrome / Edge / Safari */
 .sideFrame::-webkit-scrollbar{
   width: 10px;
 }
@@ -304,7 +326,6 @@ body{
   background: rgba(136,164,250,.65);
 }
 
-/* Firefox */
 .sideFrame{
   scrollbar-width: thin;
   scrollbar-color: rgba(79,124,255,.55) rgba(255,255,255,.04);
@@ -342,20 +363,21 @@ body{
 }
 
 .qChip.answered {
-  background: #d7f7dd; /* vert clair */
+  background: #d7f7dd; 
   border-color: #40b659;
   color: #1f7a33;
 }
 
 .hidden { display: none; }
 
-/* =========================
-   ✅ Mobile responsive
-   ========================= */
+
 @media (max-width: 768px){
   body{
     padding: 14px 0;
-    align-items: flex-start; /* pour éviter blocage au centre */
+    align-items: flex-start; 
+  }
+  .resultsList{
+    grid-template-columns: 1fr; 
   }
 
   .app{
@@ -383,7 +405,6 @@ body{
     font-size: 14.5px;
   }
 
-  /* boutons plein écran */
   .actions{
     flex-direction: column;
     gap: 10px;
@@ -395,16 +416,14 @@ body{
     padding: 12px 14px;
   }
 
-  /* sideFrame passe sous la question */
   .sideFrame{
-    position: static;     /* IMPORTANT : annule le absolute */
+    position: static;     
     width: 100%;
     max-height: none;
     margin-left: 0;
     margin-top: 12px;
   }
 
-  /* chips plus petites */
   .qChip{
     width: 30px;
     height: 30px;

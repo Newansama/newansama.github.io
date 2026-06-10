@@ -185,15 +185,11 @@ function pickRandomQuestions(allQuestions, limitValue) {
 
 function loadQuestions(data) {
     const all = data.questions || [];
-    const selectedLimit = questionLimitSelect ? questionLimitSelect.value : "10";
+    const selectedRadio = document.querySelector('input[name="questionLimit"]:checked');
+    const selectedLimit = selectedRadio ? selectedRadio.value : "10";
 
     questions = pickRandomQuestions(all, selectedLimit);
     currentIndex = 0;
-
-    /*playerAnswers = new Array(questions.length).fill(null).map(() => ({
-        selected: [],
-        uiMode: "single"
-    }));*/
 
     playerAnswers = new Array(questions.length).fill(null).map((_, idx) => {
         const q = questions[idx];
